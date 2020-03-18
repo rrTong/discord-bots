@@ -1,6 +1,7 @@
 var Discord = require('discord.io');
 var logger = require('winston');
 var auth = require('./auth.json');
+var quotesData = require('./quotes.json');
 // Configure logger settings
 logger.remove(logger.transports.Console);
 logger.add(new logger.transports.Console, {
@@ -12,18 +13,20 @@ var bot = new Discord.Client({
    token: auth.token,
    autorun: true
 });
+
+const quotes = Object.values(quotesData);
+
 bot.on('ready', function (evt) {
     logger.info('Connected');
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
 });
 bot.on('message', function (user, userID, channelID, message, evt) {
-    // Our bot needs to know if it will execute a command
-    // It will listen for messages that will start with `!`
     if (message.match(/bruce/i)) {
+        let quoteRandom = quotes[parseInt(Math.random() * quotes.length)];
         bot.sendMessage({
             to: channelID,
-            message: 'Boards don\'t hit back'
+            message: quoteRandom
         });
      }
 });
