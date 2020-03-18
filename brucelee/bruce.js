@@ -22,7 +22,7 @@ bot.on('ready', function (evt) {
     logger.info(bot.username + ' - (' + bot.id + ')');
 });
 bot.on('message', function (user, userID, channelID, message, evt) {
-    if (message.match(/bruce/i)) {
+    if (message.match(/bruce/i) || message.match(/lee/i)) {
         let quoteRandom = quotes[parseInt(Math.random() * quotes.length)];
         bot.sendMessage({
             to: channelID,
