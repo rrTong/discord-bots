@@ -1,0 +1,11 @@
+{
+    "name": "bruce-lee",
+    "version": "1.0.0",
+    "description": "bruce",
+    "main": "bruce.js",
+    "author": "Hong Kong",
+    "dependencies": {
+        "discord.io": "github:woor/discord.io#gateway_v6",
+        "winston": "^3.2.1"
+    }
+}
