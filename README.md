@@ -2,6 +2,8 @@
 
 ## Bruce Lee
 
+[Link to add bot](https://discordapp.com/api/oauth2/authorize?client_id=689744021660237885&permissions=67584&scope=bot)
+
 Bruce Lee responds with a random quote from `quotes.json` directly after any message that includes: 
 
 - bruce
