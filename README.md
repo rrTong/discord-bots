@@ -8,8 +8,9 @@ Bruce Lee responds with a random quote from `quotes.json` directly after any mes
 
 - `@Bruce Lee`
 - bruce
+- siulung
+- xiaolong
 - junfan
-- jun fan
 - 小龍
 - 小龙
 - 振藩
