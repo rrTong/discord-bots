@@ -13,6 +13,8 @@ var bot = new Discord.Client({
    autorun: true
 });
 
+let mumuCount = 0;
+
 bot.on('ready', function (evt) {
     logger.info('Connected');
     logger.info('Logged in as: ');
@@ -20,10 +22,15 @@ bot.on('ready', function (evt) {
 });
 bot.on('message', function (user, userID, channelID, message, evt) {
     if ((userID != bot.id) && (message.match(bot.id) || message.match(/mumu/i) || message.match(/むむ/i) || message.match(/ムム/i))) {
+        mumuCount += 2;
         let output = "こんにちは！"
         let randomSelectMumu = [parseInt(Math.random() * 7)];
 
-        if (randomSelectMumu == 1) {
+        if (mumuCount > 100) {
+            output = "むむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむ";
+            mumuCount = 0;
+        }
+        else if (randomSelectMumu == 1) {
             output = "こんにちは～　ニャーニャー ฅ( ＞ω＜)ฅ";
         } else if (randomSelectMumu == 2) {
             output = "こんばんは！ 眠いですか、ニャー？　:cat:";
