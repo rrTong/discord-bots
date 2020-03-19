@@ -30,48 +30,69 @@ Mumu responds to any message containing:
 - momo, モモ
 - もも, 桃
 
-### Navigating DigitalOcean
+## Navigating DigitalOcean
 
 #### installation
 
 After auth.json, package.json, bot.js:
-`npm install`
+```
+npm install
+```
 
 If `node bot.js` doesn't work:
 
-`npm uninstall discord.io --save .`
-`npm install woor/discord.io#gateway_v6 --save`
+```
+npm uninstall discord.io --save .
+npm install woor/discord.io#gateway_v6 --save
+```
 
 #### screen
 
 install screen
-`sudo apt-get install screen`
+```
+sudo apt-get install screen
+```
 
 start new screen
-`screen`
+```
+screen
+```
 
 view all screens
-`screen -ls`
+```
+screen -ls
+```
 
 reconnect to existing screen
-`screen -r <screenid>`
+```
+screen -r <screenid>
+```
 
 #### kill
 
 remove all instances of all bots running
-
-`killall node`
+```
+killall node
+```
 
 #### user
 
 Create user:
-`adduser <username>`
+```
+adduser <username>
+```
 
 Read user:
-`id <username>`
+```
+id <username>
+```
 
 Add sudo privileges:
-`usermod -aG sudo <username>`
+```
+usermod -aG sudo <username>
+```
 
 Change to user:
-`sudo su - <username>`
+```
+sudo su - <username>
+```
