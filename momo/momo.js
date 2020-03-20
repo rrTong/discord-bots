@@ -22,7 +22,7 @@ bot.on('ready', function (evt) {
     logger.info(bot.username + ' - (' + bot.id + ')');
 });
 bot.on('message', function (user, userID, channelID, message, evt) {
-    if ((userID != bot.id) && (message.match(bot.id) || message.match(/momo/i) || message.match(/モモ/i) || message.match(/もも/i) || message.match(/桃/i))) {
+    if ((userID != bot.id) && (message.match(bot.id) || message.match(/momo/i) || message.match (/모모/i) || message.match(/モモ/i) || message.match(/もも/i) || message.match(/桃/i))) {
         random = [parseInt(Math.random() * 8)];
         output = "モモです！";
 
@@ -49,13 +49,15 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     }
 
     else if ((userID != bot.id) && (message.match(/twice/i))) {
-        random = [parseInt(Math.random() * 3)];
+        random = [parseInt(Math.random() * 4)];
         output = "TWICE!";
 
         if (random == 1) {
             output = "トゥワイス！";
         } else if (random == 2) {
             output = "트와이스!";
+        } else if (random == 3) {
+            output = "빡!"
         }
 
         bot.sendMessage({
@@ -211,9 +213,16 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     }
 
     else if ((userID != bot.id) && (message.match(/one\s*more\s*time/i))) {
+        random = [parseInt(Math.random() * 2)];
+        output = "ギミギミ～";
+
+        if (random == 1) {
+            output = "One more time～!";
+        }
+
         bot.sendMessage({
             to: channelID,
-            message: "ギミギミ～"
+            message: output
         })
     }
 
@@ -240,6 +249,34 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         bot.sendMessage({
             to: channelID,
             message: output
+        })
+    }
+
+    else if ((userID != bot.id) && (message.match(/설렌다/i) || message.match(/seollenda/i))) {
+        bot.sendMessage({
+            to: channelID,
+            message: "Me likey, me likey likey likey～"
+        })
+    }
+
+    else if ((userID != bot.id) && (message.match(/bb\s*cream/i) || message.match(/BB\s*크림/i))) {
+        bot.sendMessage({
+            to: channelID,
+            message: "BB크림 파파파"
+        })
+    }
+
+    else if ((userID != bot.id) && (message.match(/lipstick/i) || message.match(/립스틱을/i))) {
+        bot.sendMessage({
+            to: channelID,
+            message: "립스틱을 맘맘마"
+        })
+    }
+
+    else if ((userID != bot.id) && (message.match(/카메라에/i))) {
+        bot.sendMessage({
+            to: channelID,
+            message: "카메라에 담아볼까 예쁘게"
         })
     }
 
@@ -315,34 +352,6 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         bot.sendMessage({
             to: channelID,
             message: "바다야 우리와 같이 놀아, ah～"
-        })
-    }
-
-    else if ((userID != bot.id) && (message.match(/설렌다/i) || message.match(/seollenda/i))) {
-        bot.sendMessage({
-            to: channelID,
-            message: "Me likey, me likey likey likey～"
-        })
-    }
-
-    else if ((userID != bot.id) && (message.match(/bb\s*cream/i) || message.match(/BB\s*크림/i))) {
-        bot.sendMessage({
-            to: channelID,
-            message: "BB크림 파파파"
-        })
-    }
-
-    else if ((userID != bot.id) && (message.match(/lipstick/i) || message.match(/립스틱을/i))) {
-        bot.sendMessage({
-            to: channelID,
-            message: "립스틱을 맘맘마"
-        })
-    }
-
-    else if ((userID != bot.id) && (message.match(/카메라에/i))) {
-        bot.sendMessage({
-            to: channelID,
-            message: "카메라에 담아볼까 예쁘게"
         })
     }
 
