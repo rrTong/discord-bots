@@ -373,7 +373,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     }
 
     // YES OR YES
-    else if ((userID != bot.id) && (message.match(/yes\\?/i) || message.match(/yes\s*or/i) || message.match(/or\s*yes/i))) {
+    else if ((userID != bot.id) && (message.match(/yes\?/i) || message.match(/yes\s*or/i) || message.match(/or\s*yes/i))) {
         random = [parseInt(Math.random() * 4)];
         output = "You better tell me yes! ❤";
 
