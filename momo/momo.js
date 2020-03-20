@@ -48,7 +48,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         })
     }
 
-    else if ((userID != bot.id) && (message.match(/twice/i))) {
+    else if ((userID != bot.id) && (message.match(/twice/i) || message.match(/2ice/i))) {
         random = [parseInt(Math.random() * 4)];
         output = "TWICE!";
 
@@ -120,7 +120,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     }
 
     // TT
-    else if ((userID != bot.id) && (message.match(/T_*-*T/i))) {
+    else if ((userID != bot.id && !message.match(/http/i)) && (message.match(/T_*-*T/i))) {
         random = [parseInt(Math.random() * 2)];
         output = "I'm like TT!";
 
