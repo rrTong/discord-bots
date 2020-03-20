@@ -1,0 +1,11 @@
+{
+    "name": "momo",
+    "version": "1.0.0",
+    "description": "momo",
+    "main": "momo.js",
+    "author": "Japan",
+    "dependencies": {
+        "discord.io": "github:woor/discord.io#gateway_v6",
+        "winston": "^3.2.1"
+    }
+}
