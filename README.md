@@ -28,8 +28,7 @@ screen 11874
 
 Mumu responds to any message containing:
 
-- `@むむ`
-- mumu, むむ, ムム
+- `@むむ`, mumu, むむ, ムム
 - momo, モモ
 - もも, 桃
 
