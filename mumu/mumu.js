@@ -26,7 +26,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         let output = "こんにちは！"
         let randomSelectMumu = [parseInt(Math.random() * 7)];
 
-        if (mumuCount > 100) {
+        if (mumuCount > 50) {
             output = "むむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむむ";
             mumuCount = 0;
         }
