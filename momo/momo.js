@@ -48,7 +48,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         })
     }
 
-    else if ((userID != bot.id) && (message.match(/twice/i) || message.match(/2ice/i))) {
+    else if ((userID != bot.id) && (message.match(/twice/i) || message.match(/2ice/i) || message.match(/towaisu/i) || message.match(/touwaisu/i))) {
         random = [parseInt(Math.random() * 4)];
         output = "TWICE!";
 

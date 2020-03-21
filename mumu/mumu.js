@@ -51,12 +51,16 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     }
     else if ((userID != bot.id) && (message.match(/momo/i) || message.match(/モモ/i))) {
         let output = "モモじゃない！あたしは、むむです！！"
-        let randomSelectMomo = [parseInt(Math.random() * 3)];
+        let randomSelectMomo = [parseInt(Math.random() * 5)];
 
         if (randomSelectMomo == 1) {
             output = "モモじゃない！あたしは、むむです！！ むむむむむむむむむむむむむむ～";
         } else if (randomSelectMomo == 2) {
             output = "モモ？？　あたしはむむ！！！！　むむむむむむむむむ";
+        } else if (randomSelectMomo == 3) {
+            output = "違う！　むむです！！";
+        } else if (randomSelectMomo == 4) {
+            output = "ちがう！　モモじゃない！　むむです！";
         }
 
         bot.sendMessage({
