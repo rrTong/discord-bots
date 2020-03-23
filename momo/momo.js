@@ -334,7 +334,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     }
 
     // DANCE THE NIGHT AWAY
-    else if ((userID != bot.id) && (message.match(/dance\s*the\s*night/i))) {
+    else if ((userID != bot.id) && (message.match(/dance/i) && message.match(/night/i))) {
         random = [parseInt(Math.random() * 2)];
         output = "Dance the night away!";
 
