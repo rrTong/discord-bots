@@ -48,6 +48,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         })
     }
 
+    // TWICE
     else if ((userID != bot.id) && (message.match(/twice/i) || message.match(/2ice/i) || message.match(/towaisu/i) || message.match(/touwaisu/i))) {
         random = [parseInt(Math.random() * 4)];
         output = "TWICE!";
@@ -57,7 +58,26 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         } else if (random == 2) {
             output = "트와이스!";
         } else if (random == 3) {
-            output = "빡!"
+            output = "빡!";
+        }
+
+        bot.sendMessage({
+            to: channelID,
+            message: output
+        })
+    }
+
+    // ONCE
+    else if ((userID != bot.id) && (message.match(/once/i) || message.match(/2ice/i) || message.match(/towaisu/i) || message.match(/touwaisu/i))) {
+        random = [parseInt(Math.random() * 4)];
+        output = "ONCE!";
+
+        if (random == 1) {
+            output = "ワンス！";
+        } else if (random == 2) {
+            output = "원스!";
+        } else if (random == 3) {
+            output = "트와이스 ❤ 원스 ❤ 영원하라!";
         }
 
         bot.sendMessage({
@@ -310,7 +330,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     }
 
     // WHAT IS LOVE
-    else if ((userID != bot.id) && (message.match(/wanna\s*know/i) || message.match(/want\s*to\s*know/i) || message.match(/what\s*is\s*love/i))) {
+    else if ((userID != bot.id) && (message.match(/wanna\s*know/i) || message.match(/want\s*to\s*know/i) || message.match(/is\s*love/i))) {
         random = [parseInt(Math.random() * 3)];
         output = "What is love?";
 
