@@ -127,6 +127,28 @@ reconnect to existing screen
 screen -r <screenid>
 ```
 
+#### forever
+
+install forever
+```
+npm install forever -g
+```
+
+start running a bot forever
+```
+forever start --spinSleepTime 10000 bot.js
+```
+
+view all running forever
+```
+forever list
+```
+
+stop running forever by index
+```
+forever stop 0
+```
+
 #### kill
 
 remove all instances of all bots running
