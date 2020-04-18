@@ -22,7 +22,7 @@ bot.on('ready', function (evt) {
     logger.info(bot.username + ' - (' + bot.id + ')');
 });
 bot.on('message', function (user, userID, channelID, message, evt) {
-    if ((userID != bot.id) && (message.match(bot.id) || message.match(/momo/i) || message.match (/모모/i) || message.match(/モモ/i) || message.match(/もも/i) || message.match(/桃/i))) {
+    if ((userID != bot.id) && (message.match(bot.id) || message.match(/momo/i) || message.match(/모모/i) || message.match(/모구리/i) || message.match(/モモ/i) || message.match(/もも/i) || message.match(/桃/i))) {
         random = [parseInt(Math.random() * 8)];
         output = "モモです！";
 
@@ -49,8 +49,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     }
 
     // TWICE
-    else if ((userID != bot.id) && (message.match(/twice/i) || message.match(/2ice/i) || message.match(/towaisu/i) || message.match(/touwaisu/i))) {
-        random = [parseInt(Math.random() * 4)];
+    else if ((userID != bot.id) && (message.match(/twice/i) || message.match(/2ice/i) || message.match(/two\s*times/i) || message.match(/2\s*times/i)|| message.match(/towaisu/i) || message.match(/touwaisu/i))) {
+        random = [parseInt(Math.random() * 5)];
         output = "TWICE!";
 
         if (random == 1) {
@@ -59,6 +59,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             output = "트와이스!";
         } else if (random == 3) {
             output = "빡!";
+        } else if (random == 4) {
+            output = "https://tenor.com/view/twice-kpop-bang-momo-cute-gif-14680446";
         }
 
         bot.sendMessage({
@@ -68,8 +70,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     }
 
     // ONCE
-    else if ((userID != bot.id) && (message.match(/once/i) || message.match(/2ice/i) || message.match(/towaisu/i) || message.match(/touwaisu/i))) {
-        random = [parseInt(Math.random() * 4)];
+    else if ((userID != bot.id) && (message.match(/once/i) || message.match(/1ce/i) || message.match(/one\s*time/i) || message.match(/1\s*time/i))) {
+        random = [parseInt(Math.random() * 5)];
         output = "ONCE!";
 
         if (random == 1) {
@@ -78,6 +80,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             output = "원스!";
         } else if (random == 3) {
             output = "트와이스 ❤ 원스 ❤ 영원하라!";
+        } else if (random == 4) {
+            output = "TWICE!";
         }
 
         bot.sendMessage({
@@ -140,12 +144,14 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     }
 
     // TT
-    else if ((userID != bot.id && !message.match(/http/i)) && (message.match(/T_*-*T/i))) {
-        random = [parseInt(Math.random() * 2)];
+    else if ((userID != bot.id && !message.match(/http/i)) && (message.match(/^T_*-*T$/i) || message.match(/\s+T_*-*T\s*/i) || message.match(/\s*T_*-*T\s+/i))) {
+        random = [parseInt(Math.random() * 3)];
         output = "I'm like TT!";
 
         if (random == 1) {
             output = "Just like TT!";
+        } else if (random == 2) {
+            output = "TT!";
         }
 
         bot.sendMessage({
@@ -232,7 +238,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         })
     }
 
-    else if ((userID != bot.id) && (message.match(/one\s*more\s*time/i))) {
+    else if ((userID != bot.id) && (message.match(/one\s*more/i) || message.match(/1\s*more/i))) {
         random = [parseInt(Math.random() * 2)];
         output = "ギミギミ～";
 
@@ -545,10 +551,135 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     }
 
     // AKI
-    else if ((userID != bot.id) && (message.match(/aki/i) || message.match(/arki/i) || message.match(/あき/i) || message.match(/あるき/i))) {
+    else if ((userID != bot.id) && (message.match(/aki/i) || message.match(/arki/i) || message.match(/あき/i) || message.match(/あるき/i) || message.match(/아키/i))) {
+        random = [parseInt(Math.random() * 11)];
+        output = "あきくん～～❤";
+
+        if (random == 1) {
+            output = "大好き！！　❤";
+        } else if (random == 2) {
+            output = "あーきーちゃん～ :wink:";
+        } else if (random == 2) {
+            output = "あきくん～ :smirk:";
+        } else if (random == 3) {
+            output = "사랑해 아키！❤"
+        } else if (random == 4) {
+            output = "아키쿤 사랑해! :drooling_face:"
+        } else if (random == 5) {
+            output = "아키 멋있어! ❤";
+        } else if (random == 6) {
+            output = "아키 나 좋아하지?　❤";
+        } else if (random == 7) {
+            output = "아키쿤 왔구낭!";
+        } else if (random == 8) {
+            output = "https://tenor.com/view/momo-twice-kpop-gif-11162509";
+        } else if (random == 9) {
+            output = "https://tenor.com/view/momo-with-dog-animal-twice-hirai-dog-gif-13567291";
+        } else if (random == 10) {
+            output = "https://tenor.com/view/kpop-twice-momo-girls-hirai-gif-13715150";
+        }
+
         bot.sendMessage({
             to: channelID,
-            message: "あきくん～～❤"
+            message: output
+        })
+    }
+
+    else if ((userID == "700934358848241755") && (message.match(/gross/i) || message.match(/disgusting/i) || message.match(/eww/i) || message.match(/きも/i))) {
+        random = [parseInt(Math.random() * 12)];
+        output = "可愛いです！";
+
+        if (random == 1) {
+            output = "モモは可愛いです！　❤";
+        } else if (random == 2) {
+            output = "大好き～！あきくん～　❤";
+        } else if (random == 3) {
+            output = "違う～　あきはあたしを大好きですよ～！";
+        } else if (random == 4) {
+            output = "また違う、あきくん～";
+        } else if (random == 5) {
+            output = "나는 귀여워!";
+        } else if (random == 6) {
+            output = "https://tenor.com/view/momo-sad-hirai-momo-twice-gif-11710885";
+        } else if (random == 7) {
+            output = "https://tenor.com/view/momo-sad-twice-pout-gif-9441992";
+        } else if (random == 8) {
+            output = "https://tenor.com/view/twicemomo-gif-9263131";
+        } else if (random == 9) {
+            output = "https://tenor.com/view/twice-momo-eyeglasses-bangs-gif-15504311";
+        } else if (random == 10) {
+            output = "https://tenor.com/view/momoyeoeedo-gif-9805151";
+        } else if (random == 11) {
+            output = "https://tenor.com/view/momo-twice-de-tears-cry-gif-12841050";
+        }
+
+        bot.sendMessage({
+            to: channelID,
+            message: output
+        })
+    }
+
+    else if ((userID == "700934358848241755") && (message.match(/:nauseated_face:/i))) {
+        random = [parseInt(Math.random() * 11)];
+        output = ":flushed:";
+
+        if (random == 1) {
+            output = "待ってください！！";
+        } else if (random == 2) {
+            output = "あき、待ってよ！";
+        } else if (random == 3) {
+            output = "ちょっとー";
+        } else if (random == 4) {
+            output = "ちょー　あき！ :flushed:";
+        } else if (random == 5) {
+            output = "あき、やめて！ :persevere:"
+        } else if (random == 6) {
+            output = "잠깐! 아키!";
+        } else if (random == 7) {
+            output = "기다려 아키! :persevere:";
+        } else if (random == 8) {
+            output = "그러면 안돼 아키";
+        } else if (random == 9) {
+            output = "내가 아무리 좋아도 그러지 마 아키 :persevere:";
+        } else if (random == 10) {
+            output = "또 토하려고, 아키?";
+        }
+
+        bot.sendMessage({
+            to: channelID,
+            message: output
+        })
+    }
+
+    else if ((userID == "700934358848241755") && (message.match(/:face_vomiting:/i))) {
+        random = [parseInt(Math.random() * 11)];
+        output = ":cry: :broken_heart:";
+
+        if (random == 1) {
+            output = ":sob:";
+        } else if (random == 2) {
+            output = "なぜ？？　:broken_heart:";
+        } else if (random == 3) {
+            output = "何故？～　:weary:";
+        } else if (random == 4) {
+            output = "どうして？？";  
+        } else if (random == 5) {
+            output = "あきくん～　愛してる～ ❤";
+        } else if (random == 6) {
+            output = "예쁜애 옆에 예쁜애 트와이스에요!";
+        } else if (random == 7) {
+            output = "실은 좋아하는거 알아 :smirk:"
+        } else if (random == 8) {
+            output = "그래도 좋아! :wink:";
+        } else if (random == 9) {
+            output = "부끄러워하긴 아키쿤";
+        } else if (random == 10) {
+            output = "츤데레네, 아키쿤";
+        }
+
+        bot.sendMessage({
+            to: channelID,
+            message: output
         })
     }
 
