@@ -20,8 +20,6 @@ Bruce Lee responds with a random quote from `quotes.json` directly after any mes
 - Chấn Phiên
 - Брюс
 
-screen 11874
-
 ## Mumu
 
 [Link to add bot](https://discordapp.com/api/oauth2/authorize?client_id=690054643207635018&permissions=67584&scope=bot)
@@ -32,8 +30,6 @@ Mumu responds to any message containing:
 - momo, モモ
 - もも, 桃
 
-screen 21171
-
 ## Momo
 
 [Link to add bot](https://discordapp.com/api/oauth2/authorize?client_id=690388158918950923&permissions=67584&scope=bot)
@@ -42,6 +38,7 @@ TWICE MOMO responds to any message containing:
 
 - `@MOMO`, momo, 모모, モモ, もも, 桃
 - twice
+- once
 - like ooh ahh
 - cheer up
   - real man
@@ -85,9 +82,11 @@ TWICE MOMO responds to any message containing:
 - fake and true
   - 憧, 夢
 - aki
+- responds only to aki when:
+  - gross, disgusting, eww, きも
+  - :nauseated_face:
+  - :face_vomiting:
 - heechul
-
-screen 23720
 
 ## Navigating DigitalOcean
 
