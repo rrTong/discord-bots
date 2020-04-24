@@ -22,34 +22,8 @@ bot.on('ready', function (evt) {
     logger.info(bot.username + ' - (' + bot.id + ')');
 });
 bot.on('message', function (user, userID, channelID, message, evt) {
-    if ((userID != bot.id) && (message.match(bot.id) || message.match(/momo/i) || message.match(/모모/i) || message.match(/모구리/i) || message.match(/モモ/i) || message.match(/もも/i) || message.match(/桃/i))) {
-        random = [parseInt(Math.random() * 8)];
-        output = "モモです！";
-
-        if (random == 1) {
-            output = "平井モモです！";
-        } else if (random == 2) {
-            output = "トゥワイスのモモです！";
-        } else if (random == 3) {
-            output = "모모에요!";
-        } else if (random == 4) {
-            output = "히라이 모모이에요"
-        } else if (random == 5) {
-            output = "트와이스 모모에요!";
-        } else if (random == 6) {
-            output = "나는 음식을 좋아해!"
-        } else if (random == 7) {
-            output = "모구리에요!";
-        }
-    
-        bot.sendMessage({
-            to: channelID,
-            message: output
-        })
-    }
-
     // TWICE
-    else if ((userID != bot.id) && (message.match(/twice/i) || message.match(/2ice/i) || message.match(/two\s*times/i) || message.match(/2\s*times/i)|| message.match(/towaisu/i) || message.match(/touwaisu/i))) {
+    if ((userID != bot.id) && (message.match(/twice/i) || message.match(/2ice/i) || message.match(/two\s*times/i) || message.match(/2\s*times/i)|| message.match(/towaisu/i) || message.match(/touwaisu/i))) {
         random = [parseInt(Math.random() * 5)];
         output = "TWICE!";
 
@@ -688,6 +662,33 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         bot.sendMessage({
             to: channelID,
             message: ":black_heart:"
+        })
+    }
+
+    // MOMO
+    else if ((userID != bot.id) && (message.match(bot.id) || message.match(/momo/i) || message.match(/모모/i) || message.match(/모구리/i) || message.match(/モモ/i) || message.match(/もも/i) || message.match(/桃/i))) {
+        random = [parseInt(Math.random() * 8)];
+        output = "モモです！";
+
+        if (random == 1) {
+            output = "平井モモです！";
+        } else if (random == 2) {
+            output = "トゥワイスのモモです！";
+        } else if (random == 3) {
+            output = "모모에요!";
+        } else if (random == 4) {
+            output = "히라이 모모이에요"
+        } else if (random == 5) {
+            output = "트와이스 모모에요!";
+        } else if (random == 6) {
+            output = "나는 음식을 좋아해!"
+        } else if (random == 7) {
+            output = "모구리에요!";
+        }
+    
+        bot.sendMessage({
+            to: channelID,
+            message: output
         })
     }
 });
