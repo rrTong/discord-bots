@@ -559,7 +559,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         })
     }
 
-    else if ((userID == "700934358848241755") && (message.match(/gross/i) || message.match(/disgusting/i) || message.match(/eww/i) || message.match(/きも/i))) {
+    else if ((userID == "270431140056268800") && (message.match(/gross/i) || message.match(/disgusting/i) || message.match(/eww/i) || message.match(/きも/i))) {
         random = [parseInt(Math.random() * 12)];
         output = "可愛いです！";
 
@@ -593,7 +593,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         })
     }
 
-    else if ((userID == "700934358848241755") && (message.match(/:nauseated_face:/i))) {
+    else if ((userID == "270431140056268800") && (message.match(/🤢/i))) {
         random = [parseInt(Math.random() * 11)];
         output = ":flushed:";
 
@@ -625,7 +625,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         })
     }
 
-    else if ((userID == "700934358848241755") && (message.match(/:face_vomiting:/i))) {
+    else if ((userID == "270431140056268800") && (message.match(/🤮/i))) {
         random = [parseInt(Math.random() * 11)];
         output = ":cry: :broken_heart:";
 
