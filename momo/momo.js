@@ -524,6 +524,73 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         })
     }
 
+    // MORE & MORE
+    else if ((userID != bot.id) && (message.match(/more/i))) {
+        random = [parseInt(Math.random() * 6)];
+        output = "You're gonna say more more more more more and more";
+
+        if (random == 1) {
+            output = "멈추지 못해 more more more and more";
+        } else if (random == 2) {
+            output = "I wanna have more more more more more and more";
+        } else if (random == 3) {
+            output = "멈추기 싫어 more more more and more"
+        } else if (random == 4) {
+            output = "More and more!"
+        } else if (random == 5) {
+            output = "그러니 한 번 더"
+        }
+
+        bot.sendMessage({
+            to: channelID,
+            message: output
+        })
+    }
+
+    // FANFARE
+    else if ((userID != bot.id) && (message.match(/fanfare/i))) {
+        bot.sendMessage({
+            to: channelID,
+            message: "鳴らせ fanfare 高らかに！"
+        })
+    }
+
+    else if ((userID != bot.id) && (message.match(/わかった/i) || message.match(/わかって/i))) {
+        bot.sendMessage({
+            to: channelID,
+            message: "心配しなくていいよ全部わかってるから"
+        })
+    }
+
+    else if ((userID != bot.id) && (message.match(/雨/i) || message.match(/虹/i))) {
+        bot.sendMessage({
+            to: channelID,
+            message: "ナミダ 雨のあとは 虹が見えるはず"
+        })
+    }
+
+    
+    else if ((userID != bot.id) && (message.match(/夢/i))) {
+        bot.sendMessage({
+            to: channelID,
+            message: "夢じゃまだ 終われないなら"
+        })
+    }
+
+    else if ((userID != bot.id) && (message.match(/諦/i))) {
+        bot.sendMessage({
+            to: channelID,
+            message: "諦めないで さぁ"
+        })
+    }
+
+    else if ((userID != bot.id) && (message.match(/希望/i) || message.match(/リズム/i))) {
+        bot.sendMessage({
+            to: channelID,
+            message: "希望溢れる 胸のリズム"
+        })
+    }
+
     // AKI
     else if ((userID != bot.id) && (message.match(/aki/i) || message.match(/arki/i) || message.match(/あき/i) || message.match(/あるき/i) || message.match(/아키/i))) {
         random = [parseInt(Math.random() * 11)];

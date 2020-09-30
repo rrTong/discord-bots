@@ -81,6 +81,14 @@ TWICE MOMO responds to any message containing:
   - everything's alright
 - fake and true
   - 憧, 夢
+- more & more
+  - more
+- fanfare
+  - わかった, わかって
+  - 雨, 虹
+  - 夢
+  - 諦
+  - 希望, リズム
 - aki
 - responds only to aki when:
   - gross, disgusting, eww, きも
