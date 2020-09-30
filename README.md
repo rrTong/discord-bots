@@ -96,6 +96,34 @@ TWICE MOMO responds to any message containing:
   - :face_vomiting:
 - heechul
 
+## Lyndon B. Johnson
+
+[Link to add bot](https://discord.com/api/oauth2/authorize?client_id=760785092951408651&permissions=67584&scope=bot)
+
+Lyndon B. Johnson responds with a random quote from `quotes.json` directly after any message that includes: 
+
+- `@Lyndon B. Johnson`
+- lyndon
+- baines
+- johnson
+- lb
+- bj
+- lj
+- l.b.j
+- leblanc
+- 林登
+- 貝恩斯
+- 約翰遜
+- 贝恩斯
+- 约翰逊
+- リンドン
+- ジョンソン
+- 린든
+- 존슨
+- Ли́ндон
+- Бэйнс
+- Джо́нсон
+
 ## Navigating DigitalOcean
 
 #### installation
