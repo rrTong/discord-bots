@@ -104,12 +104,23 @@ Lyndon B. Johnson responds with a random quote from `quotes.json` directly after
 
 - `@Lyndon B. Johnson`
 - lyndon
+- lyndy
+- lyndo
+- lynda
+- lindon
+- lindy
+- lindo
+- linda
 - baines
 - johnson
+- john
+- jon
 - lb
 - bj
 - lj
-- l.b.j
+- b.
+- l.b
+- l.j
 - leblanc
 - 林登
 - 貝恩斯
