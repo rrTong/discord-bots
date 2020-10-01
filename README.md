@@ -118,9 +118,6 @@ Lyndon B. Johnson responds with a random quote from `quotes.json` directly after
 - lb
 - bj
 - lj
-- b.
-- l.b
-- l.j
 - leblanc
 - 林登
 - 貝恩斯
