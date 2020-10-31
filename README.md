@@ -89,9 +89,15 @@ TWICE MOMO responds to any message containing:
   - 夢
   - 諦
   - 希望, リズム
+- i can't stop me
+  - stop
+  - 눈
+  - light, 모른
+  - 답
+  - 가고
 - aki
 - responds only to aki when:
-  - gross, disgusting, eww, きも
+  - gross, disgusting, eww, puke, きも
   - :nauseated_face:
   - :face_vomiting:
 - heechul
