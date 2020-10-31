@@ -591,6 +591,61 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         })
     }
 
+    // I CAN'T STOP ME
+    else if ((userID != bot.id) && (message.match(/stop/i))) {
+        random = [parseInt(Math.random() * 4)];
+        output = "I can't stop me, can't stop me";
+
+        if (random == 1) {
+            output = "Ooh, ooh, ooh～";
+        } else if (random == 2) {
+            output = "Can't stop me, can't stop me～";
+        } else if (random == 3) {
+            output = "Can't stop me ❤"
+        }
+
+        bot.sendMessage({
+            to: channelID,
+            message: output
+        })
+    }
+    
+    else if ((userID != bot.id) && (message.match(/눈/i))) {
+        bot.sendMessage({
+            to: channelID,
+            message: "눈감아 달라구"
+        })
+    }
+
+    else if ((userID != bot.id) && (message.match(/light/i) || message.match(/모른/i))) {
+        bot.sendMessage({
+            to: channelID,
+            message: "모른 척해 줘 lights off tonight"
+        })
+    }
+    
+    else if ((userID != bot.id) && (message.match(/답/i))) {
+
+        random = [parseInt(Math.random() * 2)];
+        output = "답은 알고 있잖아 근데 가고 있잖아";
+
+        if (random == 1) {
+            output = "답은 알고 있잖아";
+        }
+
+        bot.sendMessage({
+            to: channelID,
+            message: output
+        })
+    }
+
+    else if ((userID != bot.id) && (message.match(/가고/i))) {
+        bot.sendMessage({
+            to: channelID,
+            message: "근데 가고 있잖아"
+        })
+    }
+
     // AKI
     else if ((userID != bot.id) && (message.match(/aki/i) || message.match(/arki/i) || message.match(/あき/i) || message.match(/あるき/i) || message.match(/아키/i))) {
         random = [parseInt(Math.random() * 11)];
@@ -626,7 +681,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         })
     }
 
-    else if ((userID == "270431140056268800") && (message.match(/gross/i) || message.match(/disgusting/i) || message.match(/eww/i) || message.match(/きも/i))) {
+    else if ((userID == "270431140056268800") && (message.match(/gross/i) || message.match(/disgusting/i) || message.match(/eww/i) || message.match(/puke/i) || message.match(/きも/i))) {
         random = [parseInt(Math.random() * 12)];
         output = "可愛いです！";
 

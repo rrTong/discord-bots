@@ -132,9 +132,23 @@ Lyndon B. Johnson responds with a random quote from `quotes.json` directly after
 - Бэйнс
 - Джо́нсон
 
+## Vincent
+
+[Link to add bot](https://discord.com/api/oauth2/authorize?client_id=772193516146262027&permissions=67584&scope=bot)
+
+Vincent responds with a random quote from `quotes.json` directly after any message that includes: 
+
+- `@Vincent`
+- vincent
+- shinntokub
+- cutefrog
+- lifer
+
 ## Navigating DigitalOcean
 
 #### installation
+
+https://discordpy.readthedocs.io/en/latest/discord.html
 
 After auth.json, package.json, bot.js:
 ```

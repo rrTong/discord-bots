@@ -1,0 +1,11 @@
+{
+    "name": "vincent",
+    "version": "1.0.0",
+    "description": "cutefrog",
+    "main": "vincent.js",
+    "author": "life itself",
+    "dependencies": {
+        "discord.io": "github:woor/discord.io#gateway_v6",
+        "winston": "^3.2.1"
+    }
+}
