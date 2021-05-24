@@ -40,6 +40,9 @@ TWICE MOMO responds to any message containing:
 - twice
 - once
 - like ooh ahh
+  - ooh ahh
+  - 예쁘죠
+  - 사랑
 - cheer up
   - real man
   - 조르지마 얼마
@@ -49,6 +52,7 @@ TWICE MOMO responds to any message containing:
   - playboy
   - bad boy
 - signal
+- one more time
   - gimme gimme
   - one more time
   - 君もおんなじ
@@ -62,6 +66,11 @@ TWICE MOMO responds to any message containing:
   - yeah yeah yeah yeah
 - what is love
   - 만일 언젠가 진짜로 내게
+- wake me up
+  - wake
+  - shine
+  - 泣
+  - love, 愛
 - dance the night away
   - 이 느낌 정말 딱야
 - bdz
@@ -95,6 +104,23 @@ TWICE MOMO responds to any message containing:
   - light, 모른
   - 답
   - 가고
+- better
+- cry for me
+  - cry
+  - bad boy
+  - real love
+  - heartbreak, break heart
+  - 모르는
+  - 기회
+- kura kura
+  - kura, kula, くら, クラ, 쿠라
+  - yura, yula, ゆら, ユラ, 유라
+  - sowa, そわ, ソワ, 소와
+  - fura, fula, ふら, フラ, 프라
+  - control
+  - 視線
+  - 呆れ
+  - passion
 - aki
 - responds only to aki when:
   - gross, disgusting, eww, puke, きも
