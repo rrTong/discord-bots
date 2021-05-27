@@ -64,6 +64,11 @@ TWICE MOMO responds to any message containing:
 - heart shaker
   - my love
   - yeah yeah yeah yeah
+- candy pop
+  - candy
+  - honey
+  - heartbeat
+  - きら, キラ
 - what is love
   - 만일 언젠가 진짜로 내게
 - wake me up
