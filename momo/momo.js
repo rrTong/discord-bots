@@ -359,7 +359,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
     // CANDY POP
     else if ((userID != bot.id) && (message.match(/candy/i) || message.match(/wQ_POfToaVY/i))) {
-        random = [parseInt(Math.random() * 5)];
+        random = [parseInt(Math.random() * 7)];
         output = "You're my candy candy pop pop!";
 
         if (random == 1) {
@@ -370,6 +370,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             output = "CANDY CANDY POP POP 君と!";
         } else if (random == 4) {
             output = "君は CANDY POP!";
+        } else if (random == 5) {
+            output = "You're my candy pop! :candy:";
+        } else if (random == 6) {
+            output = "YOU'RE MY CANDY POP!";
         }
 
         bot.sendMessage({
@@ -403,6 +407,20 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         bot.sendMessage({
             to: channelID,
             message: "君とキラキラ輝く日々を過ごせたなら最高"
+        })
+    }
+
+    else if ((userID != bot.id) && (message.match(/秘密/i))) {
+        bot.sendMessage({
+            to: channelID,
+            message: "君がくれた秘密の味"
+        })
+    }
+
+    else if ((userID != bot.id) && (message.match(/飽き/i))) {
+        bot.sendMessage({
+            to: channelID,
+            message: "飽きない もう一回"
         })
     }
 
