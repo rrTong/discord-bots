@@ -271,3 +271,33 @@ Change to user:
 ```
 sudo su - <username>
 ```
+
+## Steps to Update Bot
+
+Log into DigitalOcean via PuTTY
+
+Change directory to bot folder
+```
+cd brucelee
+```
+
+List running instances
+```
+forever list
+```
+
+Kill specific bot (number corresponds to bot)
+```
+forever stop 0
+```
+
+Update js file
+```
+rm bruce.js
+vim bruce.js
+```
+
+Start up bot
+```
+forever start --spinSleepTime 10000 bruce.js
+```
