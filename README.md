@@ -1,8 +1,8 @@
 # discordBots
 
 ## Useful Jump
-- [Installation](https://github.com/rrTong/discordBots#installation)
-- [Steps to Update Bot](https://github.com/rrTong/discordBots#installation)
+- [If you're looking to get started on your own bots](https://github.com/rrTong/discordBots#installation)
+- [If you forgot how to update your bots](https://github.com/rrTong/discordBots#steps-to-update-bot)
 
 ## List of Discord Bots
 
