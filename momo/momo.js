@@ -919,7 +919,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 
     // KURA KURA
     else if ((userID != bot.id) && (message.match(/kura/i) || message.match(/kula/i) || message.match(/くら/i) || message.match(/クラ/i) || message.match(/쿠라/i) || message.match(/BSS8Y-0hOlY/i))) {
-        random = [parseInt(Math.random() * 4)];
+        random = [parseInt(Math.random() * 5)];
         output = "クラ クラ クラ クラ";
 
         if (random == 1) {
@@ -928,6 +928,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             output = "クラ クラ クラ クラ TWICE!!";
         } else if (random == 3) {
             output = "クラ クラ クラ クラ ❤";
+        } else if (random == 4) {
+            output = "KURA KURA KURA KURA";
         }
 
         bot.sendMessage({
