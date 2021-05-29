@@ -1,5 +1,13 @@
 # discordBots
 
+## List of Discord Bots
+
+- [Bruce Lee](https://github.com/rrTong/discordBots#bruce-lee)
+- [Mumu](https://github.com/rrTong/discordBots#mumu)
+- [Momo](https://github.com/rrTong/discordBots#momo)
+- [Lyndon B. Johnson](https://github.com/rrTong/discordBots#lyndon-b-johnson)
+- [Vincent](https://github.com/rrTong/discordBots#vincent)
+
 ## Bruce Lee
 
 [Link to add bot](https://discordapp.com/api/oauth2/authorize?client_id=689744021660237885&permissions=67584&scope=bot)
