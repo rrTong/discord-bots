@@ -189,11 +189,13 @@ Vincent responds with a random quote from `quotes.json` directly after any messa
 - cutefrog
 - lifer
 
-## Navigating DigitalOcean
+## Installation
 
-#### installation
+I used both of these links:
+[Guide I used to start making a bot](https://www.digitaltrends.com/gaming/how-to-make-a-discord-bot/)
+[Link to Discord docs to create a bot](https://discordpy.readthedocs.io/en/latest/discord.html)
 
-https://discordpy.readthedocs.io/en/latest/discord.html
+In the future, I'd like to use discord.js over discord.io as it is more updated. [Link to comparison](https://npmcompare.com/compare/discord.io,discord.js,discordie,eris)
 
 After auth.json, package.json, bot.js:
 ```
@@ -206,6 +208,10 @@ If `node bot.js` doesn't work:
 npm uninstall discord.io --save .
 npm install woor/discord.io#gateway_v6 --save
 ```
+
+### Navigating DigitalOcean
+
+I prefer using [forever](https://github.com/rrTong/discordBots#forever) but I'll leave all the documentation here
 
 #### screen
 
