@@ -1,5 +1,9 @@
 # discordBots
 
+## Useful Jump
+- [Installation](https://github.com/rrTong/discordBots#installation)
+- [Steps to Update Bot](https://github.com/rrTong/discordBots#installation)
+
 ## List of Discord Bots
 
 - [Bruce Lee](https://github.com/rrTong/discordBots#bruce-lee)
@@ -191,8 +195,10 @@ Vincent responds with a random quote from `quotes.json` directly after any messa
 
 ## Installation
 
-I used both of these links:
+I used both of these links to start:
+
 [Guide I used to start making a bot](https://www.digitaltrends.com/gaming/how-to-make-a-discord-bot/)
+
 [Link to Discord docs to create a bot](https://discordpy.readthedocs.io/en/latest/discord.html)
 
 In the future, I'd like to use discord.js over discord.io as it is more updated. [Link to comparison](https://npmcompare.com/compare/discord.io,discord.js,discordie,eris)
@@ -305,7 +311,7 @@ Kill specific bot (number corresponds to bot)
 forever stop 0
 ```
 
-Update js file
+Update file(s)
 ```
 rm bruce.js
 vim bruce.js
