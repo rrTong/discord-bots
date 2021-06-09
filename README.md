@@ -1,6 +1,7 @@
 # discordBots
 
 ## Useful Jump
+
 - [If you're looking to get started on your own bots](https://github.com/rrTong/discordBots#installation)
 - [If you forgot how to update your bots](https://github.com/rrTong/discordBots#steps-to-update-bot)
 
@@ -16,7 +17,7 @@
 
 [Link to add bot](https://discordapp.com/api/oauth2/authorize?client_id=689744021660237885&permissions=67584&scope=bot)
 
-Bruce Lee responds with a random quote from `quotes.json` directly after any message that includes: 
+Bruce Lee responds with a random quote from `quotes.json` directly after any message that includes:
 
 - `@Bruce Lee`
 - bruce
@@ -138,6 +139,9 @@ TWICE MOMO responds to any message containing:
   - 視線
   - 呆れ
   - passion
+- alcohol free
+  - alcohol
+  - mojito, mimosa, colada
 - aki
 - responds only to aki when:
   - gross, disgusting, eww, puke, きも
@@ -149,7 +153,7 @@ TWICE MOMO responds to any message containing:
 
 [Link to add bot](https://discord.com/api/oauth2/authorize?client_id=760785092951408651&permissions=67584&scope=bot)
 
-Lyndon B. Johnson responds with a random quote from `quotes.json` directly after any message that includes: 
+Lyndon B. Johnson responds with a random quote from `quotes.json` directly after any message that includes:
 
 - `@Lyndon B. Johnson`
 - lyndon
@@ -185,7 +189,7 @@ Lyndon B. Johnson responds with a random quote from `quotes.json` directly after
 
 [Link to add bot](https://discord.com/api/oauth2/authorize?client_id=772193516146262027&permissions=67584&scope=bot)
 
-Vincent responds with a random quote from `quotes.json` directly after any message that includes: 
+Vincent responds with a random quote from `quotes.json` directly after any message that includes:
 
 - `@Vincent`
 - vincent
@@ -204,6 +208,7 @@ I used both of these links to start:
 In the future, I'd like to use discord.js over discord.io as it is more updated. [Link to comparison](https://npmcompare.com/compare/discord.io,discord.js,discordie,eris)
 
 After auth.json, package.json, bot.js:
+
 ```
 npm install
 ```
@@ -222,21 +227,25 @@ I prefer using [forever](https://github.com/rrTong/discordBots#forever) but I'll
 #### screen
 
 install screen
+
 ```
 sudo apt-get install screen
 ```
 
 start new screen
+
 ```
 screen
 ```
 
 view all screens
+
 ```
 screen -ls
 ```
 
 reconnect to existing screen
+
 ```
 screen -r <screenid>
 ```
@@ -244,21 +253,25 @@ screen -r <screenid>
 #### forever
 
 install forever
+
 ```
 npm install forever -g
 ```
 
 start running a bot forever
+
 ```
 forever start --spinSleepTime 10000 bot.js
 ```
 
 view all running forever
+
 ```
 forever list
 ```
 
 stop running forever by index
+
 ```
 forever stop 0
 ```
@@ -266,6 +279,7 @@ forever stop 0
 #### kill
 
 remove all instances of all bots running
+
 ```
 killall node
 ```
@@ -273,21 +287,25 @@ killall node
 #### user
 
 Create user:
+
 ```
 adduser <username>
 ```
 
 Read user:
+
 ```
 id <username>
 ```
 
 Add sudo privileges:
+
 ```
 usermod -aG sudo <username>
 ```
 
 Change to user:
+
 ```
 sudo su - <username>
 ```
@@ -297,27 +315,32 @@ sudo su - <username>
 Log into DigitalOcean via PuTTY
 
 Change directory to bot folder
+
 ```
 cd brucelee
 ```
 
 List running instances
+
 ```
 forever list
 ```
 
 Kill specific bot (number corresponds to bot)
+
 ```
 forever stop 0
 ```
 
 Update file(s)
+
 ```
 rm bruce.js
 vim bruce.js
 ```
 
 Start up bot
+
 ```
 forever start --spinSleepTime 10000 bruce.js
 ```

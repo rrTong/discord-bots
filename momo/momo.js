@@ -26,12 +26,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   // TWICE
   if (
     userID != bot.id &&
-    (message.match(/twice/i) ||
-      message.match(/2ice/i) ||
-      message.match(/two\s*times/i) ||
-      message.match(/2\s*times/i) ||
-      message.match(/towaisu/i) ||
-      message.match(/touwaisu/i))
+    message.match(/(twice|2ice|two\s*times|2\s*times|towaisu|touwaisu)/i)
   ) {
     output = [
       "TWICE!",
@@ -51,10 +46,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   // ONCE
   else if (
     userID != bot.id &&
-    (message.match(/once/i) ||
-      message.match(/1ce/i) ||
-      message.match(/one\s*time/i) ||
-      message.match(/1\s*time/i))
+    message.match(/(once|1ce|one\s*time|1\s*time)/i)
   ) {
     output = [
       "ONCE!",
@@ -72,10 +64,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // LIKE OOH-AHH
-  else if (
-    userID != bot.id &&
-    (message.match(/ooh\s*ahh/i) || message.match(/0rtV5esQT6I/i))
-  ) {
+  else if (userID != bot.id && message.match(/(ooh\s*ahh|0rtV5esQT6I)/i)) {
     output = [
       "Ooh-ahh 하게!",
       "Ooh ahh ooh ahh～",
@@ -103,10 +92,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // CHEER UP
-  else if (
-    userID != bot.id &&
-    (message.match(/cheer\s*up/i) || message.match(/c7rCyll5AeY/i))
-  ) {
+  else if (userID != bot.id && message.match(/(cheer\s*up|c7rCyll5AeY)/i)) {
     output = [
       "Cheer up baby! Cheer up baby!",
       "Just get it together! And then baby cheer up!",
@@ -139,10 +125,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   else if (
     userID != bot.id &&
     !message.match(/http/i) &&
-    (message.match(/^T_*-*T$/i) ||
-      message.match(/\s+T_*-*T\s*/i) ||
-      message.match(/\s*T_*-*T\s+/i) ||
-      message.match(/ePpPVE-GGJw/i))
+    message.match(/(^T_*-*T$|\s+T_*-*T\s*|\s*T_*-*T\s+|ePpPVE-GGJw)/i)
   ) {
     output = ["I'm like TT!", "TT!"];
     random = [parseInt(Math.random() * output.length)];
@@ -166,10 +149,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // KNOCK KNOCK
-  else if (
-    userID != bot.id &&
-    (message.match(/knock\s*knock/i) || message.match(/8A2t_tAjMz8/i))
-  ) {
+  else if (userID != bot.id && message.match(/(knock\s*knock|8A2t_tAjMz8)/i)) {
     output = [
       "Knock knock knock knock knock",
       "Baby, knock knock knock knock knock on my door",
@@ -195,10 +175,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // SIGNAL
-  else if (
-    userID != bot.id &&
-    (message.match(/signal/i) || message.match(/VQtonf1fv_s/i))
-  ) {
+  else if (userID != bot.id && message.match(/(signal|VQtonf1fv_s)/i)) {
     output = [
       "찌릿 찌릿 찌릿 찌릿",
       "sign을 보내 signal 보내",
@@ -218,16 +195,13 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   // ONE MORE TIME
   else if (
     userID != bot.id &&
-    (message.match(/gimme\s*gimme/i) || message.match(/HuoOEry-Yc4/i))
+    message.match(/(gimme|give\s*me|HuoOEry-Yc4)/i)
   ) {
     bot.sendMessage({
       to: channelID,
       message: "One more time!",
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/one\s*more/i) || message.match(/1\s*more/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(one\s*more|1\s*more)/i)) {
     output = ["ギミギミ～", "One more time～!"];
     random = [parseInt(Math.random() * output.length)];
 
@@ -243,10 +217,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // LIKEY
-  else if (
-    userID != bot.id &&
-    (message.match(/likey/i) || message.match(/V2hlQkVJZhE/i))
-  ) {
+  else if (userID != bot.id && message.match(/(likey|V2hlQkVJZhE)/i)) {
     output = [
       "두근두근두근",
       "두근두근두근 ❤ ❤",
@@ -259,10 +230,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       to: channelID,
       message: output[random],
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/두근/i) || message.match(/ドキ/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(두근|ドキ)/i)) {
     output = [
       "두근두근두근",
       "두근두근두근 ❤ ❤",
@@ -277,26 +245,17 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       to: channelID,
       message: output[random],
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/설렌다/i) || message.match(/seollenda/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(설렌다|seollenda)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "Me likey, me likey likey likey～",
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/bb\s*cream/i) || message.match(/BB\s*크림/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(bb\s*cream|BB\s*크림)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "BB크림 파파파",
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/lipstick/i) || message.match(/립스틱을/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(lipstick|립스틱을)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "립스틱을 맘맘마",
@@ -309,10 +268,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // HEART SHAKER
-  else if (
-    userID != bot.id &&
-    (message.match(/heart\s*shake/i) || message.match(/rRzxEiBLQCA/i))
-  ) {
+  else if (userID != bot.id && message.match(/(heart\s*shake|rRzxEiBLQCA)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "You're my heart shaker, shaker～",
@@ -333,10 +289,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // CANDY POP
-  else if (
-    userID != bot.id &&
-    (message.match(/candy/i) || message.match(/wQ_POfToaVY/i))
-  ) {
+  else if (userID != bot.id && message.match(/(candy|wQ_POfToaVY)/i)) {
     output = [
       "You're my candy candy pop pop!",
       "You're my candy candy pop pop :candy: :candy:",
@@ -365,10 +318,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       to: channelID,
       message: "ドキドキ HEARTBEAT 止まらない",
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/きら/i) || message.match(/キラ/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(きら|キラ)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "君とキラキラ輝く日々を過ごせたなら最高",
@@ -388,10 +338,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   // WHAT IS LOVE
   else if (
     userID != bot.id &&
-    (message.match(/wanna\s*know/i) ||
-      message.match(/want\s*to\s*know/i) ||
-      message.match(/is\s*love/i) ||
-      message.match(/i0p1bmr0EmE/i))
+    message.match(/(wanna\s*know|want\s*to\s*know|is\s*love|i0p1bmr0EmE)/i)
   ) {
     output = [
       "What is love?",
@@ -413,10 +360,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // WAKE ME UP
-  else if (
-    userID != bot.id &&
-    (message.match(/wake/i) || message.match(/DdLYSziSXII/i))
-  ) {
+  else if (userID != bot.id && message.match(/(wake|DdLYSziSXII)/i)) {
     output = [
       "Wake me up!",
       "Up! Up! Baby, don't give up!",
@@ -444,10 +388,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       to: channelID,
       message: "泣いてもいい 立ち上がる。そうして来たように！　❤",
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/love/i) || message.match(/愛/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(love|愛)/i)) {
     output = [
       "Love 同じ空の下 愛する誰かが",
       "心！",
@@ -463,11 +404,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // DANCE THE NIGHT AWAY
-  else if (
-    userID != bot.id &&
-    ((message.match(/dance/i) && message.match(/night/i)) ||
-      message.match(/Fm5iP0S1z9w/i))
-  ) {
+  else if (userID != bot.id && message.match(/(dance.*night|Fm5iP0S1z9w)/i)) {
     output = ["Dance the night away!", "Let's dance the night away～"];
     random = [parseInt(Math.random() * output.length)];
 
@@ -483,12 +420,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // BDZ
-  else if (
-    userID != bot.id &&
-    (message.match(/bdz/i) ||
-      message.match(/bulldozer/i) ||
-      message.match(/CMNahhgR_ss/i))
-  ) {
+  else if (userID != bot.id && message.match(/(bdz|bulldozer|CMNahhgR_ss)/i)) {
     output = [
       "Like a tank, like a soldier～",
       "Let's go! Let's go!",
@@ -505,10 +437,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   // YES OR YES
   else if (
     userID != bot.id &&
-    (message.match(/yes\?/i) ||
-      message.match(/yes\s*or/i) ||
-      message.match(/or\s*yes/i) ||
-      message.match(/mAKsZ26SabQ/i))
+    message.match(/(yes\?|yes\s*or|or\s*yes|mAKsZ26SabQ)/i)
   ) {
     output = [
       "You better tell me yes! ❤",
@@ -530,10 +459,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // FANCY
-  else if (
-    userID != bot.id &&
-    (message.match(/fancy/i) || message.match(/kOHB85vDuow/i))
-  ) {
+  else if (userID != bot.id && message.match(/(fancy|kOHB85vDuow)/i)) {
     output = ["Youuuu～", "Fancy! Youu!～", "지금 너에게로 갈래"];
     random = [parseInt(Math.random() * output.length)];
 
@@ -554,18 +480,12 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // HAPPY HAPPY
-  else if (
-    userID != bot.id &&
-    (message.match(/happy\s*happy/i) || message.match(/3n9rDwpa6QA/i))
-  ) {
+  else if (userID != bot.id && message.match(/(happy\s*happy|3n9rDwpa6QA)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "You you you!",
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/with\s*you/i) || message.match(/oh\s*yeah/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(with\s*you|oh\s*yeah)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "I wanna be with you!",
@@ -583,10 +503,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // BREAKTHROUGH
-  else if (
-    userID != bot.id &&
-    (message.match(/break/i) || message.match(/ZdKYi5ekshM/i))
-  ) {
+  else if (userID != bot.id && message.match(/(break|ZdKYi5ekshM)/i)) {
     output = [
       "Breakthrough breakthrough breakthrough breakthrough",
       "Break, break, breakthrough",
@@ -602,10 +519,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       to: channelID,
       message: "Say say, Don't give up!",
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/時間/i) || message.match(/じかん/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(時間|じかん)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "巻き戻しはできない",
@@ -613,10 +527,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // FEEL SPECIAL
-  else if (
-    userID != bot.id &&
-    (message.match(/special/i) || message.match(/3ymwOvzhwHs/i))
-  ) {
+  else if (userID != bot.id && message.match(/(special|3ymwOvzhwHs)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "You make me feel special～❤",
@@ -629,10 +540,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // FAKE & TRUE
-  else if (
-    userID != bot.id &&
-    (message.match(/fake/i) || message.match(/zQELp93xxfo/i))
-  ) {
+  else if (userID != bot.id && message.match(/(fake|zQELp93xxfo)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "Fake &... fake & true!",
@@ -642,10 +550,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       to: channelID,
       message: "True, true, truee～",
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/憧/i) || message.match(/夢/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(憧|夢)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "憧れや夢だと そう 胸を張って語れば～",
@@ -653,10 +558,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // MORE & MORE
-  else if (
-    userID != bot.id &&
-    (message.match(/more/i) || message.match(/mH0_XpSHkZo/i))
-  ) {
+  else if (userID != bot.id && message.match(/(more|mH0_XpSHkZo)/i)) {
     output = [
       "You're gonna say more more more more more and more",
       "멈추지 못해 more more more and more",
@@ -674,26 +576,17 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // FANFARE
-  else if (
-    userID != bot.id &&
-    (message.match(/fanfare/i) || message.match(/kRT174IdxuM/i))
-  ) {
+  else if (userID != bot.id && message.match(/(fanfare|kRT174IdxuM)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "鳴らせ fanfare 高らかに！",
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/わかった/i) || message.match(/わかって/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(わかった|わかって)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "心配しなくていいよ全部わかってるから",
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/雨/i) || message.match(/虹/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(雨|虹)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "ナミダ 雨のあとは 虹が見えるはず",
@@ -708,10 +601,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       to: channelID,
       message: "諦めないで さぁ",
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/希望/i) || message.match(/リズム/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(希望|リズム)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "希望溢れる 胸のリズム",
@@ -719,10 +609,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // I CAN'T STOP ME
-  else if (
-    userID != bot.id &&
-    (message.match(/stop/i) || message.match(/CM4CkVFmTds/i))
-  ) {
+  else if (userID != bot.id && message.match(/(stop|CM4CkVFmTds)/i)) {
     output = [
       "I can't stop me, can't stop me",
       "Ooh, ooh, ooh～",
@@ -740,10 +627,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       to: channelID,
       message: "눈감아 달라구",
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/light/i) || message.match(/모른/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(light|모른)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "모른 척해 줘 lights off tonight",
@@ -764,10 +648,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // BETTER
-  else if (
-    userID != bot.id &&
-    (message.match(/better/i) || message.match(/sLmLwgxnPUE/i))
-  ) {
+  else if (userID != bot.id && message.match(/(better|sLmLwgxnPUE)/i)) {
     output = [
       "Cause you make it better!",
       "君だから better ❤",
@@ -786,10 +667,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // CRY FOR ME
-  else if (
-    userID != bot.id &&
-    (message.match(/cry/i) || message.match(/FF50-LY2Kro/i))
-  ) {
+  else if (userID != bot.id && message.match(/(cry|FF50-LY2Kro)/i)) {
     output = [
       "I want you to cry, cry for me!",
       "I want you to cry",
@@ -824,8 +702,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     });
   } else if (
     userID != bot.id &&
-    (message.match(/heartbreak/i) ||
-      (message.match(/break/i) && message.match(/heart/i)))
+    message.match(/(heartbreak|break.*heart|heart.*break)/i)
   ) {
     bot.sendMessage({
       to: channelID,
@@ -846,12 +723,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   // KURA KURA
   else if (
     userID != bot.id &&
-    (message.match(/kura/i) ||
-      message.match(/kula/i) ||
-      message.match(/くら/i) ||
-      message.match(/クラ/i) ||
-      message.match(/쿠라/i) ||
-      message.match(/BSS8Y-0hOlY/i))
+    message.match(/(kura|kula|くら|クラ|쿠라|BSS8Y-0hOlY)/i)
   ) {
     output = [
       "クラ クラ クラ クラ",
@@ -866,37 +738,17 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       to: channelID,
       message: output[random],
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/yura/i) ||
-      message.match(/yula/i) ||
-      message.match(/ゆら/i) ||
-      message.match(/ユラ/i) ||
-      message.match(/유라/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(yura|yula|ゆら|ユラ|유라)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "ユラ ユラ ユラ ユラ",
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/sowa/i) ||
-      message.match(/そわ/i) ||
-      message.match(/ソワ/i) ||
-      message.match(/소와/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(sowa|そわ|ソワ|소와)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "ソワ ソワ ソワ ソワ",
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/fura/i) ||
-      message.match(/fula/i) ||
-      message.match(/ふら/i) ||
-      message.match(/フラ/i) ||
-      message.match(/프라/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(fura|fula|ふら|フラ|프라)/i)) {
     output = ["クラ クラ クラ クラ", "フラ フラ フラ フラ all night"];
     random = [parseInt(Math.random() * output.length)];
 
@@ -937,10 +789,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // ALCOHOL-FREE
-  else if (
-    userID != bot.id &&
-    (message.match(/alcohol/i) || message.match(/XA2YEHn-A8Q/i))
-  ) {
+  else if (userID != bot.id && message.match(/(alcohol|XA2YEHn-A8Q)/i)) {
     output = [
       "나는 alcohol-free 근데 취해",
       "That's what you do to me",
@@ -953,12 +802,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       to: channelID,
       message: output[random],
     });
-  } else if (
-    userID != bot.id &&
-    (message.match(/mojito/i) ||
-      message.match(/mimosa/i) ||
-      message.match(/colada/i))
-  ) {
+  } else if (userID != bot.id && message.match(/(mojito|mimosa|colada)/i)) {
     bot.sendMessage({
       to: channelID,
       message: "Mojito with lime, sweet mimosa, piña colada",
@@ -966,14 +810,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // AKI
-  else if (
-    userID != bot.id &&
-    (message.match(/aki/i) ||
-      message.match(/arki/i) ||
-      message.match(/あき/i) ||
-      message.match(/あるき/i) ||
-      message.match(/아키/i))
-  ) {
+  else if (userID != bot.id && message.match(/(aki|arki|あき|あるき|아키)/i)) {
     output = [
       "あきくん～～❤",
       "大好き！！　❤",
@@ -999,11 +836,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     });
   } else if (
     userID == "270431140056268800" &&
-    (message.match(/gross/i) ||
-      message.match(/disgusting/i) ||
-      message.match(/eww/i) ||
-      message.match(/puke/i) ||
-      message.match(/きも/i))
+    message.match(/(gross|disgusting|vile|eww|puke|きも)/i)
   ) {
     output = [
       "可愛いです！",
@@ -1072,10 +905,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // HEECHUL
-  else if (
-    userID != bot.id &&
-    (message.match(/heechul/i) || message.match(/희철/i))
-  ) {
+  else if (userID != bot.id && message.match(/(heechul|희철)/i)) {
     bot.sendMessage({
       to: channelID,
       message: ":black_heart:",
@@ -1086,13 +916,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   else if (
     userID != bot.id &&
     (message.match(bot.id) ||
-      message.match(/momo/i) ||
-      message.match(/모모/i) ||
-      message.match(/모구리/i) ||
-      message.match(/モモ/i) ||
-      message.match(/もも/i) ||
-      message.match(/桃/i) ||
-      message.match(/🍑/i))
+      message.match(/(momo|모모|모구리|モモ|もも|桃|🍑)/i))
   ) {
     output = [
       "モモです！",
