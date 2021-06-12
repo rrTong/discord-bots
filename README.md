@@ -197,6 +197,25 @@ Vincent responds with a random quote from `quotes.json` directly after any messa
 - cutefrog
 - lifer
 
+## Miihi
+
+[Link to add bot](https://discord.com/api/oauth2/authorize?client_id=853008987154546718&permissions=67584&scope=bot)
+
+Miihi responds to:
+
+- make you happy
+  - make you, happy, 嬉
+  - 笑
+  - what do you
+- step and a step
+  - step, 歩
+  - everything will
+  - 頬, 触, 風
+- take a picture
+- poppin' shakin'
+- miihi
+- dog
+
 ## Installation
 
 I used both of these links to start:

@@ -1,0 +1,11 @@
+{
+  "name": "miihi",
+  "version": "1.0.0",
+  "description": "doggo",
+  "main": "miihi.js",
+  "author": "Tokyo",
+  "dependencies": {
+    "discord.io": "github:woor/discord.io#gateway_v6",
+    "winston": "^3.2.1"
+  }
+}
