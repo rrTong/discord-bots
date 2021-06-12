@@ -269,7 +269,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // POPPIN' SHAKIN'
-  else if (userID != bot.id && message.match(/(pop|shake|mgYnKfgx6tI)/i)) {
+  else if (userID != bot.id && message.match(/(pop|shak|mgYnKfgx6tI)/i)) {
     output = [
       "Poppin' Shakin'!",
       "La la~ poppin' shakin'!",
