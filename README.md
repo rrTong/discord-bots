@@ -12,6 +12,7 @@
 - [Momo](https://github.com/rrTong/discordBots#momo)
 - [Lyndon B. Johnson](https://github.com/rrTong/discordBots#lyndon-b-johnson)
 - [Vincent](https://github.com/rrTong/discordBots#vincent)
+- [Miihi](https://github.com/rrTong/discordBots#miihi)
 
 ## Bruce Lee
 
