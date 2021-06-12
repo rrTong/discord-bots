@@ -213,7 +213,23 @@ Miihi responds to:
   - everything will
   - 頬, 触, 風
 - take a picture
+  - take a, picture
+  - wanna
+  - gonna
+  - 心
+  - 1, one, 一
+  - 2, two, 二
+  - 3, three, 三
+  - 4, four, 四
+  - 5, five, 五
+  - 辛, 悲
+  - worry, lonely
 - poppin' shakin'
+  - pop, shak
+  - la la, ラララ, ラーラー, ららら, らーらー
+  - new world
+  - holiday
+  - 出会, 誘
 - miihi
 - dog
 
