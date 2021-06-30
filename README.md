@@ -143,6 +143,12 @@ TWICE MOMO responds to any message containing:
 - alcohol free
   - alcohol
   - mojito, mimosa, colada
+- perfect world
+  - perfect, world
+  - get
+  - away
+  - 言い訳
+  - 機嫌
 - aki
 - responds only to aki when:
   - gross, disgusting, eww, puke, きも

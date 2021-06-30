@@ -809,6 +809,63 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     });
   }
 
+  // PERFECT WORLD
+  else if (userID != bot.id && message.match(/(perfect|world|fmOEKOjyDxU)/i)) {
+    output = [
+      "音もなく崩れてく Perfect world",
+      "砂の城みたい",
+      "Perfect world!",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/get/i)) {
+    output = [
+      "Get out! Get lost!",
+      "Get out!",
+      "Get lost!",
+      "Get back, and gooo!!",
+      "Get back! And go!",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/away/i)) {
+    output = [
+      "I just want you to keep away!",
+      "Wanna keep away!!",
+      "I just wanna be far away!",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/(言い訳|いいわけ)/i)) {
+    output = ["言い訳やめて No", "Yeah yeah yeah yeah~"];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/(機嫌|きげん)/i)) {
+    output = ["機嫌取りなら Stop", "Yeah yeah yeah yeah"];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  }
+
   // AKI
   else if (userID != bot.id && message.match(/(aki|arki|あき|あるき|아키)/i)) {
     output = [
