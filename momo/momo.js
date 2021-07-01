@@ -64,11 +64,14 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // LIKE OOH-AHH
-  else if (userID != bot.id && message.match(/(ooh\s*ahh|0rtV5esQT6I)/i)) {
+  else if (userID != bot.id && message.match(/(ooh|ahh|0rtV5esQT6I)/i)) {
     output = [
       "Ooh-ahh 하게!",
       "Ooh ahh ooh ahh～",
       "I just wanna fall in love!",
+      "https://gph.is/g/EJex8wx",
+      "https://gph.is/g/Z2XQKo8",
+      "https://tenor.com/bdcH8.gif",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -96,6 +99,9 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     output = [
       "Cheer up baby! Cheer up baby!",
       "Just get it together! And then baby cheer up!",
+      "https://gph.is/g/4oNXWy0",
+      "https://gph.is/g/Z7rGjzR",
+      "https://gph.is/g/Zy6gWwe",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -106,7 +112,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   } else if (userID != bot.id && message.match(/real\s*man/i)) {
     output = [
       "Be a man, a real man～",
-      "Gotta see you love me like a real man ♡",
+      "Gotta see you love me like a real man ❤",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -119,6 +125,14 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       to: channelID,
       message: "가지 않아 부르게 해줄게 Baby～",
     });
+  } else if (userID != bot.id && message.match(/shy/i)) {
+    output = ["Shy shy shy～", "샤샤샤❤", "https://tenor.com/7c46.gif"];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
   }
 
   // TT
@@ -127,7 +141,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     !message.match(/http/i) &&
     message.match(/(^T_*-*T$|\s+T_*-*T\s*|\s*T_*-*T\s+|ePpPVE-GGJw)/i)
   ) {
-    output = ["I'm like TT!", "TT!"];
+    output = ["I'm like TT!", "TT!", "https://gph.is/g/aXj8LYV"];
     random = [parseInt(Math.random() * output.length)];
 
     bot.sendMessage({
@@ -183,6 +197,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "Signal 보내 signal 보내",
       "뚜루루뚜뚜 뚜루루뚜뚜",
       "왜 반응이 없니",
+      "https://gph.is/g/ZOQ02nv",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -223,6 +238,8 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "두근두근두근 ❤ ❤",
       "Me likey likey likey ❤",
       "ドキドキドキ",
+      "https://gph.is/g/am715AQ",
+      "https://gph.is/g/ZYx5Q7A",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -251,14 +268,20 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       message: "Me likey, me likey likey likey～",
     });
   } else if (userID != bot.id && message.match(/(bb\s*cream|BB\s*크림)/i)) {
+    output = ["BB크림 파파파", "https://gph.is/g/ZYx5Q7A"];
+    random = [parseInt(Math.random() * output.length)];
+
     bot.sendMessage({
       to: channelID,
-      message: "BB크림 파파파",
+      message: output[random],
     });
   } else if (userID != bot.id && message.match(/(lipstick|립스틱을)/i)) {
+    output = ["립스틱을 맘맘마", "https://gph.is/g/ZYx5Q7A"];
+    random = [parseInt(Math.random() * output.length)];
+
     bot.sendMessage({
       to: channelID,
-      message: "립스틱을 맘맘마",
+      message: output[random],
     });
   } else if (userID != bot.id && message.match(/카메라에/i)) {
     bot.sendMessage({
@@ -285,6 +308,50 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     bot.sendMessage({
       to: channelID,
       message: "No no, no noo～",
+    });
+  }
+
+  // MERRY & HAPPY
+  else if (
+    userID != bot.id &&
+    message.match(/(merry|christmas|zi_6oaQyckM)/i)
+  ) {
+    output = [
+      "이제는 나도 크리스마스가 좋아!",
+      "이제는 내 크리스마스도 Merry야",
+      "New year는 Happy야",
+      "https://gph.is/g/Zy6WNVv",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/santa/i)) {
+    output = [
+      "Thank you Santa",
+      "Thank you Santa :santa:",
+      "Thank you thank you Santa Claus",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/(손을|빛들)/i)) {
+    output = [
+      "네 손을 잡고 거니는",
+      "거리의 불빛들까지도",
+      "네 손을 잡고 거니는 거리의 불빛들까지도",
+      "모두 다르잖아 너무 예쁘잖아 미쳤나봐",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
     });
   }
 
@@ -344,6 +411,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "What is love?",
       "What is love? :woman_shrugging:",
       "I wanna know know know know",
+      "https://gph.is/g/EGN3RrM",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -405,7 +473,11 @@ bot.on("message", function (user, userID, channelID, message, evt) {
 
   // DANCE THE NIGHT AWAY
   else if (userID != bot.id && message.match(/(dance.*night|Fm5iP0S1z9w)/i)) {
-    output = ["Dance the night away!", "Let's dance the night away～"];
+    output = [
+      "Dance the night away!",
+      "Let's dance the night away～",
+      "https://gph.is/g/Z7rODmw",
+    ];
     random = [parseInt(Math.random() * output.length)];
 
     bot.sendMessage({
@@ -444,6 +516,8 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "둘 중에 하나만 골라 yes or yes?",
       "하나만 선택해 어서 yes or yes?",
       "나 아니면 우리?",
+      "https://gph.is/g/Zxz8236",
+      "https://gph.is/g/Evx63QY",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -458,9 +532,39 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     });
   }
 
+  // THE BEST THING I EVER DID
+  else if (userID != bot.id && message.match(/(best|CfUGjK6gGgs)/i)) {
+    output = [
+      "Yeah, the best thing I ever did ❤",
+      "The best thing I ever did~",
+      "내가 올해 안한 일 중에...",
+      "내가 올해 안한 일 중에? ❤",
+      "내가 올해 제일 잘한 일 너를 만난 것",
+      "내가 올해 안한 일 중에 제일 잘한 일 너와 헤어지지 않은 것 함께 있는 것",
+      "https://gph.is/g/ZPXeJ2p",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/(말이|떨리)/i)) {
+    bot.sendMessage({
+      to: channelID,
+      message: "너를 위해 남겨둔 수많은 말이 맴돌아 떨리는 걸",
+    });
+  }
+
   // FANCY
   else if (userID != bot.id && message.match(/(fancy|kOHB85vDuow)/i)) {
-    output = ["Youuuu～", "Fancy! Youu!～", "지금 너에게로 갈래"];
+    output = [
+      "Youuuu～",
+      "Fancy! Youu!～",
+      "지금 너에게로 갈래",
+      "https://gph.is/g/aNneMG9",
+      "https://gph.is/g/aQKeWd2",
+    ];
     random = [parseInt(Math.random() * output.length)];
 
     bot.sendMessage({
@@ -481,9 +585,18 @@ bot.on("message", function (user, userID, channelID, message, evt) {
 
   // HAPPY HAPPY
   else if (userID != bot.id && message.match(/(happy\s*happy|3n9rDwpa6QA)/i)) {
+    output = [
+      "You you you!",
+      "https://tenor.com/8sKX.gif",
+      "https://tenor.com/8fO0.gif",
+      "https://tenor.com/8fP7.gif",
+      "https://tenor.com/bckei.gif",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
     bot.sendMessage({
       to: channelID,
-      message: "You you you!",
+      message: output[random],
     });
   } else if (userID != bot.id && message.match(/(with\s*you|oh\s*yeah)/i)) {
     bot.sendMessage({
@@ -528,9 +641,12 @@ bot.on("message", function (user, userID, channelID, message, evt) {
 
   // FEEL SPECIAL
   else if (userID != bot.id && message.match(/(special|3ymwOvzhwHs)/i)) {
+    output = ["You make me feel special～❤", "https://gph.is/g/ZPXeJ9X"];
+    random = [parseInt(Math.random() * output.length)];
+
     bot.sendMessage({
       to: channelID,
-      message: "You make me feel special～❤",
+      message: output[random],
     });
   } else if (userID != bot.id && message.match(/everything'*s\s*alright/i)) {
     bot.sendMessage({
@@ -566,6 +682,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "멈추기 싫어 more more more and more",
       "More and more!",
       "그러니 한 번 더",
+      "https://gph.is/g/aRLegkP",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -615,6 +732,8 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "Ooh, ooh, ooh～",
       "Can't stop me, can't stop me～",
       "Can't stop me ❤",
+      "https://tenor.com/brHvr.gif",
+      "https://tenor.com/brGvW.gif",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -657,6 +776,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "Ooh la la la~",
       "踊る my heart",
       "Oh better, oh better~",
+      "https://tenor.com/bw4dd.gif",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -795,6 +915,10 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "That's what you do to me",
       "Mojito with lime, sweet mimosa, piña colada",
       "I'm drunk in you ~",
+      "https://gph.is/g/4D9eOwB",
+      "https://gph.is/g/4AgR2Y7",
+      "https://gph.is/g/aRYVABd",
+      "https://gph.is/g/aXNLreD",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -814,7 +938,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     output = [
       "音もなく崩れてく Perfect world",
       "砂の城みたい",
-      "Perfect world!",
+      "Perfect world~",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -882,8 +1006,20 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "아키 나 좋아하지?　❤",
       "아키쿤 왔구낭!",
       "https://tenor.com/view/momo-twice-kpop-gif-11162509",
-      "https://tenor.com/view/momo-with-dog-animal-twice-hirai-dog-gif-13567291",
       "https://tenor.com/view/kpop-twice-momo-girls-hirai-gif-13715150",
+      "https://tenor.com/bEt95.gif",
+      "https://tenor.com/bqdKe.gif",
+      "https://tenor.com/bgvYV.gif",
+      "https://tenor.com/WpFQ.gif",
+      "https://tenor.com/view/momo-with-dog-animal-twice-hirai-dog-gif-13567291",
+      "https://tenor.com/bD1nn.gif",
+      "https://tenor.com/bDtdR.gif",
+      "https://tenor.com/bBOL2.gif",
+      "https://tenor.com/buQEx.gif",
+      "https://tenor.com/bwgrz.gif",
+      "https://tenor.com/bwgrs.gif",
+      "https://tenor.com/bANOS.gif",
+      "https://tenor.com/buQEt.gif",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -908,6 +1044,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "https://tenor.com/view/twice-momo-eyeglasses-bangs-gif-15504311",
       "https://tenor.com/view/momoyeoeedo-gif-9805151",
       "https://tenor.com/view/momo-twice-de-tears-cry-gif-12841050",
+      "https://tenor.com/2bv6.gif",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -952,6 +1089,34 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "그래도 좋아! :wink:",
       "부끄러워하긴 아키쿤",
       "츤데레네, 아키쿤",
+      "https://tenor.com/bigxp.gif",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (
+    userID == "270431140056268800" &&
+    message.match(
+      /(fk|fck|fuk|fuc|fu*k|fu*c|fa*k|fo*k|fe*k|fi*k|f0*k|se*x|s3*x|ふあ*ぁ*っ*く|フア*ァ*ッ*ク|セッ*クス)/i
+    )
+  ) {
+    output = [
+      "https://tenor.com/2bXt.gif",
+      "https://tenor.com/babhJ.gif",
+      "https://tenor.com/MbQ2.gif",
+      "https://tenor.com/bEtkx.gif",
+      "https://tenor.com/PPiV.gif",
+      "https://tenor.com/MbQ1.gif",
+      "https://tenor.com/bvXUx.gif",
+      "https://tenor.com/brXiZ.gif",
+      "https://tenor.com/bx4ot.gif",
+      "https://tenor.com/bx4ow.gif",
+      "https://tenor.com/8oDi.gif",
+      "https://tenor.com/bf4Pk.gif",
+      "https://tenor.com/bx8AO.gif",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -988,6 +1153,32 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "나는 음식을 좋아해!",
       "모구리에요!",
       "안녕!",
+      "https://tenor.com/YChl.gif",
+      "https://tenor.com/WAtC.gif",
+      "https://tenor.com/bzd6B.gif",
+      "https://tenor.com/bEHn8.gif",
+      "https://tenor.com/X4XB.gif",
+      "https://tenor.com/bspMj.gif",
+      "https://tenor.com/bA0lB.gif",
+      "https://tenor.com/7pIP.gif",
+      "https://tenor.com/brXmF.gif",
+      "https://tenor.com/bwgq1.gif",
+      "https://tenor.com/bzdWo.gif",
+      "https://tenor.com/YxvY.gif",
+      "https://tenor.com/buA1H.gif",
+      "https://tenor.com/bspMB.gif",
+      "https://tenor.com/bspMp.gif",
+      "https://tenor.com/bspLP.gif",
+      "https://tenor.com/YxvZ.gif",
+      "https://tenor.com/bBc3D.gif",
+      "https://tenor.com/bc3te.gif",
+      "https://tenor.com/8sln.gif",
+      "https://tenor.com/Nfzh.gif",
+      "https://tenor.com/bqXa4.gif",
+      "https://tenor.com/bvuVe.gif",
+      "https://tenor.com/bejjt.gif",
+      "https://tenor.com/7cOj.gif",
+      "https://tenor.com/bsXZs.gif",
     ];
     random = [parseInt(Math.random() * output.length)];
 

@@ -78,6 +78,10 @@ TWICE MOMO responds to any message containing:
 - heart shaker
   - my love
   - yeah yeah yeah yeah
+- merry & happy
+  - merry, christmas
+  - santa
+  - 손을, 빛들
 - candy pop
   - candy
   - honey
@@ -95,6 +99,9 @@ TWICE MOMO responds to any message containing:
 - bdz
 - yes or yes
   - heart burn
+- the best thing i ever did
+  - best
+  - 말이, 떨리
 - fancy
   - take my hand
   - 위험할거야
@@ -154,6 +161,7 @@ TWICE MOMO responds to any message containing:
   - gross, disgusting, eww, puke, きも
   - :nauseated_face:
   - :face_vomiting:
+  - fk
 - heechul
 
 ## Lyndon B. Johnson
