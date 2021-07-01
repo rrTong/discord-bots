@@ -1100,7 +1100,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   } else if (
     userID == "270431140056268800" &&
     message.match(
-      /(fk|fck|fuk|fuc|fu*k|fu*c|fa*k|fo*k|fe*k|fi*k|f0*k|se*x|s3*x|ふあ*ぁ*っ*く|フア*ァ*ッ*ク|セッ*クス)/i
+      /(fk|fck|fuk|fuc|fu*k|fu*c|fa*k|fo*k|fe*k|fi*k|f0*k|wtf|wth|se*x|s3*x|ふあ*ぁ*っ*く|フア*ァ*ッ*ク|セッ*クス)/i
     )
   ) {
     output = [
