@@ -349,10 +349,12 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "ミイヒです！",
       "ニジューのミイヒです！",
       "안녕하세요! 미이히입니다.",
-      "https://tenor.com/view/miihi-niziu-gif-21646749",
-      "https://tenor.com/view/niziu-niziumiihi-miihi-gif-18675061",
-      "https://tenor.com/view/niziu-nizi-umiihi-miihi-gif-18565320",
-      "https://tenor.com/view/niziu-miihi-niziuミイヒ-niziu-みいひ-ミイヒ-gif-19027525",
+      "https://tenor.com/bCZth.gif",
+      "https://tenor.com/bqwoP.gif",
+      "https://tenor.com/bp3QO.gif",
+      "https://tenor.com/brZ5J.gif",
+      "https://tenor.com/bxZUm.gif",
+      "https://tenor.com/boQEW.gif",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -371,10 +373,19 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "ワンワンワンワン",
       "バウ！バウ！",
       "バウバウバウ",
-      "https://tenor.com/view/niziu-nizi-niziu-miihi-jyp-kawaii-gif-17673824",
-      "https://tenor.com/view/ミイヒ-虹プロ-歌う-ヒトカラ-部屋-gif-17987181",
-      "https://tenor.com/view/niziu-nizi-project-clap-mako-rio-gif-21464001",
-      "https://tenor.com/view/miihi-nizi-project-niziu-niziu-miihi-cute-gif-17747283",
+      "https://tenor.com/bmjVQ.gif",
+      "https://tenor.com/bnDrZ.gif",
+      "https://tenor.com/bCdVJ.gif",
+      "https://tenor.com/bmC2F.gif",
+      "https://tenor.com/bmUvD.gif",
+      "https://tenor.com/bp6cy.gif",
+      "https://tenor.com/bzXkG.gif",
+      "https://tenor.com/bCZmm.gif",
+      "https://tenor.com/br9rr.gif",
+      "https://tenor.com/bnY3p.gif",
+      "https://tenor.com/bmQ52.gif",
+      "https://tenor.com/bmFDy.gif",
+      "https://tenor.com/bmFDk.gif",
     ];
     random = [parseInt(Math.random() * output.length)];
 

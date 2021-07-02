@@ -218,6 +218,7 @@ Vincent responds with a random quote from `quotes.json` directly after any messa
 
 Miihi responds to:
 
+- `@鈴野未光`, miihi, 未光, ミイヒ, みいひ, 미이히
 - make you happy
   - make you, happy, 嬉
   - 笑
@@ -244,7 +245,6 @@ Miihi responds to:
   - new world
   - holiday
   - 出会, 誘
-- miihi
 - dog
 
 ## Installation
