@@ -50,7 +50,7 @@ Mumu responds to any message containing:
 
 TWICE MOMO responds to any message containing:
 
-- `@MOMO`, momo, 모모, モモ, もも, 桃
+- `@MOMO`, momo, 모모, モモ, もも, 桃, peach
 - twice
 - once
 - like ooh ahh

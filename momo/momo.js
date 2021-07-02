@@ -1099,7 +1099,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     });
   } else if (
     userID == "270431140056268800" &&
-    message.match(/(gross|disgusting|vile|eww|puke|きも)/i)
+    message.match(/(gros|disgust|vile|ew|puk|きも)/i)
   ) {
     output = [
       "可愛いです！",
@@ -1138,6 +1138,14 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "그러면 안돼 아키",
       "내가 아무리 좋아도 그러지 마 아키 :persevere:",
       "또 토하려고, 아키?",
+      "https://tenor.com/bzXDI.gif",
+      "https://tenor.com/bspMD.gif",
+      "https://tenor.com/39cC.gif",
+      "https://tenor.com/ba5MV.gif",
+      "https://tenor.com/ba9XI.gif",
+      "https://tenor.com/baejk.gif",
+      "https://tenor.com/biqNS.gif",
+      "https://tenor.com/12HL.gif",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -1160,6 +1168,14 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "부끄러워하긴 아키쿤",
       "츤데레네, 아키쿤",
       "https://tenor.com/bigxp.gif",
+      "https://tenor.com/bwTEc.gif",
+      "https://tenor.com/bvj8Z.gif",
+      "https://tenor.com/bzXDJ.gif",
+      "https://tenor.com/bzIUe.gif",
+      "https://tenor.com/bqAcv.gif",
+      "https://tenor.com/bcJUr.gif",
+      "https://tenor.com/bqAcw.gif",
+      "https://tenor.com/bbLGk.gif",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -1208,7 +1224,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   else if (
     userID != bot.id &&
     (message.match(bot.id) ||
-      message.match(/(momo|모모|모구리|モモ|もも|桃|🍑)/i))
+      message.match(/(momo|모모|모구리|モモ|もも|桃|peach|🍑)/i))
   ) {
     output = [
       "モモです！",
