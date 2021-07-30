@@ -527,6 +527,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "Like a tank, like a soldier～",
       "Let's go! Let's go!",
       "こんな気持ちは はじめて! 大事件だよ!",
+      "https://tenor.com/view/twice-momo-singing-cute-kpop-gif-14203990",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -1224,7 +1225,9 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   else if (
     userID != bot.id &&
     (message.match(bot.id) ||
-      message.match(/(momo|모모|모구리|モモ|もも|桃|peach|🍑)/i))
+      message.match(
+        /(m(o|0)+m(o|0)+|m(o|0)+x|m(o|0)+\+|m(o|0)+\*|m(o|0)+^|모모|모구리|モモ|もも|桃|peach|🍑)/i
+      ))
   ) {
     output = [
       "モモです！",
