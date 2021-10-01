@@ -1061,6 +1061,55 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     });
   }
 
+  // THE FEELS
+  else if (userID != bot.id && message.match(/(feel|f5_wn8mexmM)/i)) {
+    output = [
+      "I got the feels for you! :heart:",
+      "I got the feels for you yea yea yea yeaah~",
+      "I got all the feels, for sure",
+      "I got all the feels for ya~",
+      "Boy I boy I boy I know. I know I got the feels~",
+      "Boy I boy I boy I know~ I know you feel it too :two_hearts:",
+      "You have stolen my heart! :heartbeat:",
+      "Lightning straight to my heart! :zap:",
+      "https://tenor.com/bJMz5.gif",
+      "https://tenor.com/bJS44.gif",
+      "https://tenor.com/bJETy.gif",
+      "https://tenor.com/bJMAm.gif",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/shy|obvious/i)) {
+    output = [
+      "Get! So shy it's obvious",
+      "Get—so shy it's obvious~",
+      "I get, so shy it's obvious",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/boy/i)) {
+    output = [
+      "Boy I boy I boy I know!",
+      "Boy I boy I boy I know. :boy:",
+      "Boy I boy I boy I know. I know I got the feels!",
+      "Boy I boy I boy I know~ I know you feel it too",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  }
+
   // AKI
   else if (userID != bot.id && message.match(/(aki|arki|あき|あるき|아키)/i)) {
     output = [
@@ -1091,6 +1140,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "https://tenor.com/bwgrs.gif",
       "https://tenor.com/bANOS.gif",
       "https://tenor.com/buQEt.gif",
+      "https://tenor.com/bJMz5.gif",
     ];
     random = [parseInt(Math.random() * output.length)];
 

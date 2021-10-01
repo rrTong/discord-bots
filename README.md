@@ -156,6 +156,10 @@ TWICE MOMO responds to any message containing:
   - away
   - 言い訳
   - 機嫌
+- the feels
+  - feel
+  - shy, obvious
+  - boy
 - aki
 - responds only to aki when:
   - gross, disgusting, eww, puke, きも
