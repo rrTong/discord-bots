@@ -69,6 +69,9 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "Ooh-ahh 하게!",
       "Ooh ahh ooh ahh～",
       "I just wanna fall in love!",
+      "https://media.giphy.com/media/ME9XpELgl8HvrmszAc/giphy.gif",
+      "https://media.giphy.com/media/gh66ZPwydyfkRJEQPT/giphy.gif",
+      "https://media.giphy.com/media/VzfZuXH9iUcBd8hEFv/giphy.gif",
       "https://gph.is/g/EJex8wx",
       "https://gph.is/g/Z2XQKo8",
       "https://tenor.com/bdcH8.gif",
@@ -99,6 +102,8 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     output = [
       "Cheer up baby! Cheer up baby!",
       "Just get it together! And then baby cheer up!",
+      "https://media.giphy.com/media/duQigq3rRhlka7IUsa/giphy.gif",
+      "https://media.giphy.com/media/ZaiP0md2QCxIH0rw9n/giphy.gif",
       "https://gph.is/g/4oNXWy0",
       "https://gph.is/g/Z7rGjzR",
       "https://gph.is/g/Zy6gWwe",
@@ -144,9 +149,9 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     output = [
       "I'm like TT!",
       "TT!",
+      "https://media.giphy.com/media/cKyfYWrHVvhxDC6oEW/giphy.gif",
       "https://gph.is/g/aXj8LYV",
       "https://gph.is/g/Z2Vzexm",
-      "http://gph.is/2jd9W7G",
       "https://tenor.com/Afvr.gif",
     ];
     random = [parseInt(Math.random() * output.length)];
@@ -176,6 +181,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "Baby, knock knock knock knock knock on my door",
       "Knock knock!",
       "Knock on my door～!",
+      "https://media.giphy.com/media/SvvDxnOsle0KG8xGdo/giphy.gif",
       "http://gph.is/2maeFJi",
       "http://gph.is/2lEayY1",
       "https://tenor.com/K6a2.gif",
@@ -207,10 +213,11 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "Signal 보내 signal 보내",
       "뚜루루뚜뚜 뚜루루뚜뚜",
       "왜 반응이 없니",
+      "https://media.giphy.com/media/UtJr33mDeOM9PaALce/giphy.gif",
       "https://gph.is/g/ZOQ02nv",
       "https://gph.is/g/4gVwrJ9",
-      "http://gph.is/2qkMUle",
-      "http://gph.is/2qkQvzI",
+      "https://gph.is/2qkMUle",
+      "https://gph.is/2qkQvzI",
       "https://tenor.com/VRHH.gif",
     ];
     random = [parseInt(Math.random() * output.length)];
@@ -253,6 +260,8 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "두근두근두근 ❤ ❤",
       "Me likey likey likey ❤",
       "ドキドキドキ",
+      "https://media.giphy.com/media/hqlN57qVkSUr91xLS7/giphy.gif",
+      "https://media.giphy.com/media/UrtHHewWnAHk3BZvnq/giphy.gif",
       "https://gph.is/g/am715AQ",
       "https://gph.is/g/ZYx5Q7A",
       "https://tenor.com/byCZf.gif",
@@ -310,10 +319,17 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // HEART SHAKER
-  else if (userID != bot.id && message.match(/(heart\s*shake|rRzxEiBLQCA)/i)) {
+  else if (userID != bot.id && message.match(/(heart|shake|rRzxEiBLQCA)/i)) {
+    output = [
+      "You're my heart shaker, shaker～",
+      "https://media.giphy.com/media/TISC6N843LGN9zAJJ2/giphy.gif",
+      "https://media.giphy.com/media/Vdt3LQnSO9jYaaNSxj/giphy.gif",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
     bot.sendMessage({
       to: channelID,
-      message: "You're my heart shaker, shaker～",
+      message: output[random],
     });
   } else if (userID != bot.id && message.match(/my\s*love/i)) {
     output = ["Come and be my love～", "Come and be my love, baby～❤"];
@@ -339,6 +355,8 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "이제는 나도 크리스마스가 좋아!",
       "이제는 내 크리스마스도 Merry야",
       "New year는 Happy야",
+      "https://media.giphy.com/media/L3uKcZpFi9Mw8HtyHi/giphy.gif",
+      "https://media.giphy.com/media/VgfQUcSUGhPqEyBdsu/giphy.gif",
       "https://gph.is/g/Zy6WNVv",
       "https://tenor.com/buc4g.gif",
       "https://tenor.com/bhtyS.gif",
@@ -436,6 +454,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "What is love?",
       "What is love? :woman_shrugging:",
       "I wanna know know know know",
+      "https://media.giphy.com/media/dzD81GNMNKp2DnU3yS/giphy.gif",
       "https://gph.is/g/EGN3RrM",
       "https://gph.is/g/Z50OnQO",
       "https://tenor.com/bDRSV.gif",
@@ -505,6 +524,8 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     output = [
       "Dance the night away!",
       "Let's dance the night away～",
+      "https://media.giphy.com/media/W1Yc2SXEYfkS3TAhJA/giphy.gif",
+      "https://media.giphy.com/media/jsNo9VAXkHD8IxZT8D/giphy.gif",
       "https://gph.is/g/Z7rODmw",
       "https://tenor.com/ZbpF.gif",
     ];
@@ -733,6 +754,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "멈추기 싫어 more more more and more",
       "More and more!",
       "그러니 한 번 더",
+      "https://media.giphy.com/media/ehIt8o7ZFeyZc7J0dv/giphy.gif",
       "https://gph.is/g/aRLegkP",
       "https://gph.is/g/E0WvlKb",
     ];
@@ -784,6 +806,10 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "Ooh, ooh, ooh～",
       "Can't stop me, can't stop me～",
       "Can't stop me ❤",
+      "https://media.giphy.com/media/ZTJfPhUM9Efbngngbt/giphy.gif",
+      "https://media.giphy.com/media/SACqYBdsNdXp0nVLE0/giphy.gif",
+      "https://media.giphy.com/media/RFUuzTBucFbBSdmpLY/giphy.gif",
+      "https://media.giphy.com/media/RzgBac2eWuid49VX52/giphy.gif",
       "https://tenor.com/brHvr.gif",
       "https://tenor.com/brGvW.gif",
       "https://tenor.com/brXmw.gif",
@@ -1072,8 +1098,16 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "Boy I boy I boy I know~ I know you feel it too :two_hearts:",
       "You have stolen my heart! :heartbeat:",
       "Lightning straight to my heart! :zap:",
+      "https://media.giphy.com/media/LdBKAnOUCzWwKtMhOY/giphy.gif",
+      "https://media.giphy.com/media/Y6VxLIi2alkKu76mcf/giphy.gif",
+      "https://media.giphy.com/media/VWm2eH2t2JSc4OhKif/giphy.gif",
+      "https://media.giphy.com/media/XyFCHjb1vSCHElhEaM/giphy.gif",
+      "https://media.giphy.com/media/s31Y1Z4rEx6Taciutd/giphy.gif",
+      "https://media.giphy.com/media/xCYDt00ip6nAnIxLMQ/giphy.gif",
+      "https://media.giphy.com/media/kkeQ3vstdq0byidylY/giphy.gif",
+      "https://media.giphy.com/media/apP7opQlUKa8VywJ2s/giphy.gif",
+      "https://media.giphy.com/media/5SCTx1uxoE3g35RA1L/giphy.gif",
       "https://tenor.com/bJMz5.gif",
-      "https://tenor.com/bJS44.gif",
       "https://tenor.com/bJETy.gif",
       "https://tenor.com/bJMAm.gif",
     ];
