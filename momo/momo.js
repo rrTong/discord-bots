@@ -612,6 +612,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "Youuuu～",
       "Fancy! Youu!～",
       "지금 너에게로 갈래",
+      "https://media.giphy.com/media/dXXg7CVpPVkdsqWH78/giphy.gif",
       "https://gph.is/g/aNneMG9",
       "https://gph.is/g/aQKeWd2",
       "https://tenor.com/6PXx.gif",
@@ -1107,6 +1108,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "https://media.giphy.com/media/kkeQ3vstdq0byidylY/giphy.gif",
       "https://media.giphy.com/media/apP7opQlUKa8VywJ2s/giphy.gif",
       "https://media.giphy.com/media/5SCTx1uxoE3g35RA1L/giphy.gif",
+      "https://media.giphy.com/media/Zu3kioMdHluwcWbZXl/giphy.gif",
       "https://tenor.com/bJMz5.gif",
       "https://tenor.com/bJETy.gif",
       "https://tenor.com/bJMAm.gif",
@@ -1135,6 +1137,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "Boy I boy I boy I know. :boy:",
       "Boy I boy I boy I know. I know I got the feels!",
       "Boy I boy I boy I know~ I know you feel it too",
+      "https://media.giphy.com/media/Zu3kioMdHluwcWbZXl/giphy.gif",
     ];
     random = [parseInt(Math.random() * output.length)];
 
@@ -1326,6 +1329,8 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       "나는 음식을 좋아해!",
       "모구리에요!",
       "안녕!",
+      "https://media.giphy.com/media/J4gEDouaHgAgc109md/giphy.gif",
+      "https://media.giphy.com/media/fYMOVT9LQT5OYat5mA/giphy.gif",
       "http://gph.is/2k4ud3n",
       "https://tenor.com/YChl.gif",
       "https://tenor.com/WAtC.gif",
