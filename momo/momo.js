@@ -1147,6 +1147,59 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     });
   }
 
+  // SCIENTIST
+  else if (userID != bot.id && message.match(/(scien|vPwaXytZcgI)/i)) {
+    output = [
+      "Love ain't a science, don't need no license~",
+      "Love ain't a science :heart:",
+      "Need no license.",
+      "머리 싸매고 고민할수록 minus",
+      "Don't try to be a genius, why so serious?",
+      "Don't try to be a genius :wink:",
+      "맘이 가는 대로, 맘이 시킨 대로",
+      "What you, what you waiting for?",
+      "다음 과목은 뭐야? So what's the next class, then?",
+      "https://media.giphy.com/media/HbfI5YgXCbbh1W5Mij/giphy.gif",
+      "https://media.giphy.com/media/Nl9zy9HrEKShQdaViO/giphy.gif",
+      "https://media.giphy.com/media/SKpqU6kP71uLTfexOz/giphy.gif",
+      "https://media.giphy.com/media/vrAozhbg1t63h3lYQa/giphy.gif",
+      "https://media.giphy.com/media/dK0pZrrran6exhuS98/giphy.gif",
+      "https://tenor.com/bLRD7.gif",
+      "https://tenor.com/bLJan.gif",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/과목|class/i)) {
+    output = [
+      "다음 과목은 뭐야? So what's the next class, then?",
+      "다음 과목은 뭐야?",
+      "So what's the next class, then?",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/답|몰라/i)) {
+    output = [
+      "답이 없어 재미있는 걸 넌 왜 몰라?",
+      "답을 몰라 설레었던 걸 넌 왜 몰라?",
+      "https://media.giphy.com/media/HbfI5YgXCbbh1W5Mij/giphy.gif",
+      "https://media.giphy.com/media/Nl9zy9HrEKShQdaViO/giphy.gif",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  }
+
   // AKI
   else if (userID != bot.id && message.match(/(aki|arki|あき|あるき|아키)/i)) {
     output = [

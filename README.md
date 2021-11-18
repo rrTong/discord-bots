@@ -16,7 +16,7 @@
 
 ## Bruce Lee
 
-[Link to add bot](https://discordapp.com/api/oauth2/authorize?client_id=689744021660237885&permissions=67584&scope=bot)
+[Link to add bot](https://discordapp.com/api/oauth2/authorize?client_id=689744021660237885&permissions=2048&scope=bot)
 
 Bruce Lee responds with a random quote from `quotes.json` directly after any message that includes:
 
@@ -36,7 +36,7 @@ Bruce Lee responds with a random quote from `quotes.json` directly after any mes
 
 ## Mumu
 
-[Link to add bot](https://discordapp.com/api/oauth2/authorize?client_id=690054643207635018&permissions=67584&scope=bot)
+[Link to add bot](https://discordapp.com/api/oauth2/authorize?client_id=690054643207635018&permissions=2048&scope=bot)
 
 Mumu responds to any message containing:
 
@@ -46,7 +46,7 @@ Mumu responds to any message containing:
 
 ## Momo
 
-[Link to add bot](https://discordapp.com/api/oauth2/authorize?client_id=690388158918950923&permissions=67584&scope=bot)
+[Link to add bot](https://discordapp.com/api/oauth2/authorize?client_id=690388158918950923&permissions=2048&scope=bot)
 
 TWICE MOMO responds to any message containing:
 
@@ -160,6 +160,10 @@ TWICE MOMO responds to any message containing:
   - feel
   - shy, obvious
   - boy
+- scientist
+  - scien
+  - 과목, class
+  - 답, 몰라
 - aki
 - responds only to aki when:
   - gross, disgusting, eww, puke, きも
@@ -170,7 +174,7 @@ TWICE MOMO responds to any message containing:
 
 ## Lyndon B. Johnson
 
-[Link to add bot](https://discord.com/api/oauth2/authorize?client_id=760785092951408651&permissions=67584&scope=bot)
+[Link to add bot](https://discord.com/api/oauth2/authorize?client_id=760785092951408651&permissions=2048&scope=bot)
 
 Lyndon B. Johnson responds with a random quote from `quotes.json` directly after any message that includes:
 
@@ -206,7 +210,7 @@ Lyndon B. Johnson responds with a random quote from `quotes.json` directly after
 
 ## Vincent
 
-[Link to add bot](https://discord.com/api/oauth2/authorize?client_id=772193516146262027&permissions=67584&scope=bot)
+[Link to add bot](https://discord.com/api/oauth2/authorize?client_id=772193516146262027&permissions=2048&scope=bot)
 
 Vincent responds with a random quote from `quotes.json` directly after any message that includes:
 
@@ -218,7 +222,7 @@ Vincent responds with a random quote from `quotes.json` directly after any messa
 
 ## Miihi
 
-[Link to add bot](https://discord.com/api/oauth2/authorize?client_id=853008987154546718&permissions=67584&scope=bot)
+[Link to add bot](https://discord.com/api/oauth2/authorize?client_id=853008987154546718&permissions=2048&scope=bot)
 
 Miihi responds to:
 
@@ -249,6 +253,13 @@ Miihi responds to:
   - new world
   - holiday
   - 出会, 誘
+- chopstick
+  - chop, stick,
+  - hand, clap
+  - shoe
+  - wing, fly
+  - 全て, 見せて
+  - 伝え, 切れる
 - dog
 
 ## Installation

@@ -337,6 +337,89 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     });
   }
 
+  // CHOPSTICK
+  else if (userID != bot.id && message.match(/(chop|stick|nCjmXHsRJNY)/i)) {
+    output = [
+      "Like a chopstick 一本じゃ掴めない",
+      "Like a chopstick 一本じゃ掴めない :chopsticks:",
+      "Like a hand to clap 一人じゃつまらない",
+      "Like a hand to clap 一人じゃつまらない :clap:",
+      "Like a pretty shoe ちぐはぐじゃ心配",
+      "Like a pretty shoe ちぐはぐじゃ心配 :ballet_shoes:",
+      "Like a wing to fly 君としか飛べない",
+      "Like a wing to fly 君としか飛べない :butterfly:",
+      "That's why I need you",
+      "I always wanna be with you :heart:",
+      "同じ気持ちでいて",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/hand|clap/i)) {
+    output = [
+      "Like a hand to clap 一人じゃつまらない",
+      "Like a hand to clap 一人じゃつまらない :clap:",
+      "Like a hand to clap 一人じゃつまらない :raised_hands:",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/shoe/i)) {
+    output = [
+      "Like a pretty shoe ちぐはぐじゃ心配",
+      "Like a pretty shoe ちぐはぐじゃ心配 :athletic_shoe:",
+      "Like a pretty shoe ちぐはぐじゃ心配 :ballet_shoes:",
+      "Like a pretty shoe ちぐはぐじゃ心配 :mans_shoe:",
+      "Like a pretty shoe ちぐはぐじゃ心配 :womans_flat_shoe:",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/wing|fly/i)) {
+    output = [
+      "Like a wing to fly 君としか飛べない",
+      "Like a wing to fly 君としか飛べない :butterfly:",
+      "Like a wing to fly 君としか飛べない :bird:",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/全て|見せて/i)) {
+    output = [
+      "全て見せてあげる私でも伝え切れるものかな?",
+      "全て見せてあげる私でも",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/伝え|切れる/i)) {
+    output = [
+      "全て見せてあげる私でも伝え切れるものかな?",
+      "伝え切れるものかな?",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  }
+
   // MIIHI
   else if (
     userID != bot.id &&
