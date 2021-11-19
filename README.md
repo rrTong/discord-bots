@@ -260,6 +260,10 @@ Miihi responds to:
   - wing, fly
   - 全て, 見せて
   - 伝え, 切れる
+- need u
+  - need
+  - baby, midnight
+  - 涙
 - dog
 
 ## Installation

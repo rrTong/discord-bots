@@ -420,6 +420,58 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     });
   }
 
+  // NEED U
+  else if (userID != bot.id && message.match(/(need|v9H-bT_76x0)/i)) {
+    output = [
+      "I need U :heart:",
+      "I NeedU!",
+      "I Need U! I need U!",
+      "NeedU~ NeedU~",
+      "Need U Need U Need U Need U",
+      "I! Need U Need U Need U Need U",
+      "I'm I'm with you!",
+      "So come with me :heart:",
+      "I need U　どんな未来でも",
+      "君となら特別な気がするよ",
+      "I’m with you　会いたい時を越えて",
+      "育っていく Our dream この歌に乗せて",
+      "君じゃなきゃ",
+      "もう待てないよ！",
+      "ぎゅっと手と手をつないで",
+      "I'm with you, I'm with you, I'm with you",
+      "I’m with you, I’m with you, I’m with you そう信じていたいんだ",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/baby|midnight/i)) {
+    output = [
+      "ベ、 ビー ベ、 ビー ベビー :heart:",
+      "Baby Baby Baby でも不安な Midnight",
+      "この気持ち一緒なの?",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/涙/i)) {
+    output = [
+      "なんでこんなに涙が出るんだろう",
+      "何でこんなに涙が出るんだろう :cry:",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  }
+
   // MIIHI
   else if (
     userID != bot.id &&
