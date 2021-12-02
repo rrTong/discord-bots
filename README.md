@@ -1,4 +1,4 @@
-# discordBots
+# discord-bots
 
 ## Useful Jump
 
