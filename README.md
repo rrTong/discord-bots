@@ -164,6 +164,10 @@ TWICE MOMO responds to any message containing:
   - scien
   - 과목, class
   - 답, 몰라
+- doughnut
+  - dough
+  - loop
+  - 穴
 - aki
 - responds only to aki when:
   - gross, disgusting, eww, puke, きも

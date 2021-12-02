@@ -1200,6 +1200,51 @@ bot.on("message", function (user, userID, channelID, message, evt) {
     });
   }
 
+  // DOUGHNUT
+  else if (userID != bot.id && message.match(/(dough|VcOSUOpACq0)/i)) {
+    output = [
+      "Just like a doughnut 迷い込んだ恋のループ",
+      "Just like a doughnut 迷い込んだ恋のループ :doughnut:",
+      "Just like a doughnut~",
+      "迷い込んだ恋のループ",
+      "2人のlove loop :doughnut:",
+      "2人のlove loop",
+      "2人のlove loop yeah yeah yeah",
+      "Love loop :heart:",
+      "心には君型の穴が空いてるの",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/(loop)/i)) {
+    output = [
+      "2人のlove loop :doughnut:",
+      "2人のlove loop",
+      "2人のlove loop yeah yeah yeah",
+      "Love loop :heart:",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  } else if (userID != bot.id && message.match(/(穴)/i)) {
+    output = [
+      "心には君型の穴が空いてるの :doughnut:",
+      "心には君型の穴が空いてるの :heart:",
+    ];
+    random = [parseInt(Math.random() * output.length)];
+
+    bot.sendMessage({
+      to: channelID,
+      message: output[random],
+    });
+  }
+
   // AKI
   else if (userID != bot.id && message.match(/(aki|arki|あき|あるき|아키)/i)) {
     output = [
