@@ -559,7 +559,10 @@ bot.on("message", function (user, userID, channelID, message, evt) {
   }
 
   // YES OR YES
-  else if (userID != bot.id && message.match(/(yes|mAKsZ26SabQ)/i)) {
+  else if (
+    userID != bot.id &&
+    message.match(/(yes\s*or|or\s*yes|mAKsZ26SabQ)/i)
+  ) {
     output = [
       "You better tell me yes! ❤",
       "둘 중에 하나만 골라 yes or yes?",
@@ -1044,7 +1047,7 @@ bot.on("message", function (user, userID, channelID, message, evt) {
       to: channelID,
       message: output[random],
     });
-  } else if (userID != bot.id && message.match(/get/i)) {
+  } else if (userID != bot.id && message.match(/get\s*(out|lost|back)/i)) {
     output = [
       "Get out! Get lost!",
       "Get out!",
